@@ -3,48 +3,48 @@ interface MatchRule {
 }
 
 const matchRuleDict:MatchRule = {
-    "contextMenu.Copy": "div[data-testid='dropdown-option-Copy']>div",
-    "contextMenu.PasteHere": "div[data-testid='dropdown-option-Paste here']>div",
-    "contextMenu.PasteToReplace": "div[data-testid='dropdown-option-Paste to replace']>div",
-    "contextMenu.CopyOrPasteAs": "div[data-testid='dropdown-option-Copy/Paste as']>div",
+    "contextMenu.Copy": "div[data-testid='dropdown-option-Copy']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.PasteHere": "div[data-testid='dropdown-option-Paste here']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.PasteToReplace": "div[data-testid='dropdown-option-Paste to replace']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.CopyOrPasteAs": "div[data-testid='dropdown-option-Copy/Paste as']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.CopyOrPasteAs.CopyAsCSS": "div[data-testid='dropdown-option-Copy as CSS']>div",
-    "contextMenu.CopyOrPasteAs.CopyAsSVG": "div[data-testid='dropdown-option-Copy as SVG']>div",
-    "contextMenu.CopyOrPasteAs.CopyAsPNG": "div[data-testid='dropdown-option-Copy as PNG']>div",
-    "contextMenu.CopyOrPasteAs.CopyLink": "div[data-testid='dropdown-option-Copy  link']>div",
+    "contextMenu.CopyOrPasteAs.CopyAsCSS": "div[data-testid='dropdown-option-Copy as CSS']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.CopyOrPasteAs.CopyAsSVG": "div[data-testid='dropdown-option-Copy as SVG']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.CopyOrPasteAs.CopyAsPNG": "div[data-testid='dropdown-option-Copy as PNG']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.CopyOrPasteAs.CopyLink": "div[data-testid='dropdown-option-Copy  link']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.CopyOrPasteAs.CopyProperties": "div[data-testid='dropdown-option-Copy properties']>div",
-    "contextMenu.CopyOrPasteAs.PasteProperties": "div[data-testid='dropdown-option-Paste properties']>div",
+    "contextMenu.CopyOrPasteAs.CopyProperties": "div[data-testid='dropdown-option-Copy properties']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.CopyOrPasteAs.PasteProperties": "div[data-testid='dropdown-option-Paste properties']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.BringToFront": "div[data-testid='dropdown-option-Bring to front']>div",
-    "contextMenu.SendToBack": "div[data-testid='dropdown-option-Send to back']>div",
+    "contextMenu.BringToFront": "div[data-testid='dropdown-option-Bring to front']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.SendToBack": "div[data-testid='dropdown-option-Send to back']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.GroupSelection": "div[data-testid='dropdown-option-Group selection']>div",
-    "contextMenu.FrameSelection": "div[data-testid='dropdown-option-Frame selection']>div",
-    "contextMenu.Ungroup": "div[data-testid='dropdown-option-Ungroup']>div",
-    "contextMenu.Flatten": "div[data-testid='dropdown-option-Flatten']>div",
-    "contextMenu.OutlineStroke": "div[data-testid='dropdown-option-Outline stroke']>div",
-    "contextMenu.UseAsMask": "div[data-testid='dropdown-option-Use as mask']>div",
-    "contextMenu.SetAsThumbnail": "div[data-testid='dropdown-option-Set as thumbnail']>div",
+    "contextMenu.GroupSelection": "div[data-testid='dropdown-option-Group selection']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.FrameSelection": "div[data-testid='dropdown-option-Frame selection']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.Ungroup": "div[data-testid='dropdown-option-Ungroup']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.Flatten": "div[data-testid='dropdown-option-Flatten']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.OutlineStroke": "div[data-testid='dropdown-option-Outline stroke']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.UseAsMask": "div[data-testid='dropdown-option-Use as mask']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.SetAsThumbnail": "div[data-testid='dropdown-option-Set as thumbnail']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.AddAutoLayout": "div[data-testid='dropdown-option-Add auto layout']>div",
-    "contextMenu.CreateComponent": "div[data-testid='dropdown-option-Create component']>div",
-    "contextMenu.Plugins": "div[data-testid='dropdown-option-Plugins']>div",
+    "contextMenu.AddAutoLayout": "div[data-testid='dropdown-option-Add auto layout']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.CreateComponent": "div[data-testid='dropdown-option-Create component']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.Plugins": "div[data-testid='dropdown-option-Plugins']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.Plugins.ManagePlugins": "div[data-testid='dropdown-option-Manage plugins…']>div",
-    "contextMenu.Plugins.BrowsePluginsInCommunity": "div[data-testid='dropdown-option-Browse plugins in Community']>div",
+    "contextMenu.Plugins.ManagePlugins": "div[data-testid='dropdown-option-Manage plugins…']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.Plugins.BrowsePluginsInCommunity": "div[data-testid='dropdown-option-Browse plugins in Community']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.ShowOrHide": "div[data-testid='dropdown-option-Show/Hide']>div",
-    "contextMenu.LockOrUnlock": "div[data-testid='dropdown-option-Lock/Unlock']>div",
+    "contextMenu.ShowOrHide": "div[data-testid='dropdown-option-Show/Hide']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.LockOrUnlock": "div[data-testid='dropdown-option-Lock/Unlock']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.flipHorizontal": "div[data-testid='dropdown-option-Flip horizontal']>div",
-    "contextMenu.flipVertical": "div[data-testid='dropdown-option-Flip vertical']>div",
+    "contextMenu.flipHorizontal": "div[data-testid='dropdown-option-Flip horizontal']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.flipVertical": "div[data-testid='dropdown-option-Flip vertical']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.ShowOrHideUI": "div[data-testid='dropdown-option-Show/Hide UI']>div",
-    "contextMenu.ShowOrHideComments": "div[data-testid='dropdown-option-Show/Hide comments']>div",
+    "contextMenu.ShowOrHideUI": "div[data-testid='dropdown-option-Show/Hide UI']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.ShowOrHideComments": "div[data-testid='dropdown-option-Show/Hide comments']>div[class^='multilevel_dropdown--name']",
 
-    "contextMenu.CursorChat": "div[data-testid='dropdown-option-Cursor chat']>div",
-    "contextMenu.QuickActions": "div[data-testid='dropdown-option-Quick actions…']>div"
+    "contextMenu.CursorChat": "div[data-testid='dropdown-option-Cursor chat']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.QuickActions": "div[data-testid='dropdown-option-Quick actions…']>div[class^='multilevel_dropdown--name']"
 }
 
 interface MatchElement {
