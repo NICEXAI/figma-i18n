@@ -1,4 +1,22 @@
 export default {
+    "fullscreenMenu.BackToFiles": "Back to files",
+
+    "fullscreenMenu.File": "File",
+    "fullscreenMenu.Edit": "Edit",
+    "fullscreenMenu.View": "View",
+    "fullscreenMenu.Object": "Object",
+    "fullscreenMenu.Vector": "Vector",
+    "fullscreenMenu.Text": "Text",
+    "fullscreenMenu.Arrange": "Arrange",
+
+    "fullscreenMenu.Integrations": "Integrations",
+    "fullscreenMenu.Preferences": "Preferences",
+    "fullscreenMenu.Libraries": "Libraries",
+
+    "fullscreenMenu.GetDesktopApp": "Get desktop app",
+    "fullscreenMenu.HelpAndAccount": "Help and account",
+
+
     "contextMenu.Copy": "Copy",
     "contextMenu.PasteHere": "Paste here",
     "contextMenu.PasteToReplace": "Paste to replace",

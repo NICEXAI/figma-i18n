@@ -1,4 +1,22 @@
 export default {
+    "fullscreenMenu.BackToFiles": "返回文件列表",
+
+    "fullscreenMenu.File": "文件",
+    "fullscreenMenu.Edit": "编辑",
+    "fullscreenMenu.View": "查看",
+    "fullscreenMenu.Object": "对象",
+    "fullscreenMenu.Vector": "矢量",
+    "fullscreenMenu.Text": "文本",
+    "fullscreenMenu.Arrange": "排列",
+
+    "fullscreenMenu.Integrations": "集成",
+    "fullscreenMenu.Preferences": "偏好设置",
+    "fullscreenMenu.Libraries": "组件库",
+
+    "fullscreenMenu.GetDesktopApp": "下载桌面版应用",
+    "fullscreenMenu.HelpAndAccount": "帮助和账户",
+
+
     "contextMenu.Copy": "复制",
     "contextMenu.PasteHere": "粘贴到这里",
     "contextMenu.PasteToReplace": "粘贴替换",
