@@ -1,6 +1,8 @@
 export default {
     "fullscreenMenu.BackToFiles": "返回文件列表",
 
+    "fullscreenMenu.QuickActions": "快速操作…",
+
     "fullscreenMenu.File": "文件",
     "fullscreenMenu.File.NewDesignFile": "新建设计文件",
     "fullscreenMenu.File.NewFigJamFile": "新建 FigJam 文件",
@@ -17,9 +19,12 @@ export default {
     "fullscreenMenu.Edit.Redo": "重做",
     "fullscreenMenu.Edit.CopyAs": "复制为",
     "fullscreenMenu.Edit.PasteOverSelection": "粘贴至所选位置",
+    "fullscreenMenu.Edit.PasteToReplace": "粘贴替换",
     "fullscreenMenu.Edit.Duplicate": "创建副本",
     "fullscreenMenu.Edit.Delete": "删除",
     "fullscreenMenu.Edit.SetDefaultProperties": "设置默认属性",
+    "fullscreenMenu.Edit.CopyProperties": "复制属性",
+    "fullscreenMenu.Edit.PasteProperties": "粘贴属性",
     "fullscreenMenu.Edit.PickColor": "吸取颜色",
     "fullscreenMenu.Edit.SelectAll": "全选",
     "fullscreenMenu.Edit.SelectNone": "取消选择",
@@ -38,11 +43,12 @@ export default {
     "fullscreenMenu.View.Rulers": "标尺",
     "fullscreenMenu.View.ShowSlices": "显示切片",
     "fullscreenMenu.View.Comments": "评论",
-    "fullscreenMenu.View.Outlines": "画框轮廓",
+    "fullscreenMenu.View.Outlines": "轮廓",
     "fullscreenMenu.View.PixelPreview": "像素预览",
     "fullscreenMenu.View.MaskOutlines": "蒙版轮廓",
     "fullscreenMenu.View.FrameOutlines": "画框轮廓",
     "fullscreenMenu.View.ResourceUse": "资源使用情况",
+    "fullscreenMenu.View.ShowOrHideUI": "显示/隐藏界面",
     "fullscreenMenu.View.MultiplayerCursors": "多人鼠标指针",
     "fullscreenMenu.View.Panels": "面板",
     "fullscreenMenu.View.ZoomIn": "放大",
@@ -94,6 +100,10 @@ export default {
     "fullscreenMenu.Text": "文本",
     "fullscreenMenu.Arrange": "排列",
 
+    "fullscreenMenu.Plugins": "插件",
+    "fullscreenMenu.Plugins.ManagePlugins": "管理插件…",
+    "fullscreenMenu.Plugins.BrowsePluginsInCommunity": "在社区中浏览插件",
+
     "fullscreenMenu.Integrations": "集成",
     "fullscreenMenu.Preferences": "偏好设置",
     "fullscreenMenu.Libraries": "组件库",
@@ -104,29 +114,20 @@ export default {
 
     "contextMenu.Copy": "复制",
     "contextMenu.PasteHere": "粘贴到这里",
-    "contextMenu.PasteToReplace": "粘贴替换",
 
     "contextMenu.CopyOrPasteAs": "复制/粘贴为",
     "contextMenu.CopyOrPasteAs.CopyAsCSS": "复制为 CSS",
     "contextMenu.CopyOrPasteAs.CopyAsSVG": "复制为 SVG",
     "contextMenu.CopyOrPasteAs.CopyAsPNG": "复制为 PNG",
     "contextMenu.CopyOrPasteAs.CopyLink": "复制链接",
-    "contextMenu.CopyOrPasteAs.CopyProperties": "复制属性",
-    "contextMenu.CopyOrPasteAs.PasteProperties": "粘贴属性",
 
     "contextMenu.Ungroup": "取消编组",
     "contextMenu.Flatten": "拼合",
 
-    "contextMenu.Plugins": "插件",
-    "contextMenu.Plugins.ManagePlugins": "管理插件…",
-    "contextMenu.Plugins.BrowsePluginsInCommunity": "在社区中浏览插件",
-
     "contextMenu.ShowOrHide": "显示/隐藏",
     "contextMenu.LockOrUnlock": "锁定/解锁",
 
-    "contextMenu.ShowOrHideUI": "显示/隐藏界面",
     "contextMenu.ShowOrHideComments": "显示/隐藏评论",
 
-    "contextMenu.CursorChat": "聚焦聊天框",
-    "contextMenu.QuickActions": "快速操作…"
+    "contextMenu.CursorChat": "聚焦聊天框"
 }
