@@ -17,7 +17,13 @@ export default {
     "fullscreenMenu.Edit": "编辑",
     "fullscreenMenu.Edit.Undo": "撤销",
     "fullscreenMenu.Edit.Redo": "重做",
+
     "fullscreenMenu.Edit.CopyAs": "复制为",
+    "fullscreenMenu.Edit.CopyAs.CopyAsText": "复制为文本",
+    "fullscreenMenu.Edit.CopyAs.CopyAsCSS": "复制为 CSS",
+    "fullscreenMenu.Edit.CopyAs.CopyAsSVG": "复制为 SVG",
+    "fullscreenMenu.Edit.CopyAs.CopyAsPNG": "复制为 PNG",
+
     "fullscreenMenu.Edit.PasteOverSelection": "粘贴至所选位置",
     "fullscreenMenu.Edit.PasteToReplace": "粘贴替换",
     "fullscreenMenu.Edit.Duplicate": "创建副本",
@@ -116,9 +122,6 @@ export default {
     "contextMenu.PasteHere": "粘贴到这里",
 
     "contextMenu.CopyOrPasteAs": "复制/粘贴为",
-    "contextMenu.CopyOrPasteAs.CopyAsCSS": "复制为 CSS",
-    "contextMenu.CopyOrPasteAs.CopyAsSVG": "复制为 SVG",
-    "contextMenu.CopyOrPasteAs.CopyAsPNG": "复制为 PNG",
     "contextMenu.CopyOrPasteAs.CopyLink": "复制链接",
 
     "contextMenu.Ungroup": "取消编组",

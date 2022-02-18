@@ -17,7 +17,13 @@ export default {
     "fullscreenMenu.Edit": "Edit",
     "fullscreenMenu.Edit.Undo": "Undo",
     "fullscreenMenu.Edit.Redo": "Redo",
+
     "fullscreenMenu.Edit.CopyAs": "Copy as",
+    "fullscreenMenu.Edit.CopyAs.CopyAsText": "Copy as text",
+    "fullscreenMenu.Edit.CopyAs.CopyAsCSS": "Copy as CSS",
+    "fullscreenMenu.Edit.CopyAs.CopyAsSVG": "Copy as SVG",
+    "fullscreenMenu.Edit.CopyAs.CopyAsPNG": "Copy as PNG",
+
     "fullscreenMenu.Edit.PasteOverSelection": "Paste over selection",
     "fullscreenMenu.Edit.PasteToReplace": "Paste to replace",
     "fullscreenMenu.Edit.Duplicate": "Duplicate",
@@ -116,9 +122,6 @@ export default {
     "contextMenu.PasteHere": "Paste here",
 
     "contextMenu.CopyOrPasteAs": "Copy/Paste as",
-    "contextMenu.CopyOrPasteAs.CopyAsCSS": "Copy as CSS",
-    "contextMenu.CopyOrPasteAs.CopyAsSVG": "Copy as SVG",
-    "contextMenu.CopyOrPasteAs.CopyAsPNG": "Copy as PNG",
     "contextMenu.CopyOrPasteAs.CopyLink": "Copy link",
 
     "contextMenu.Ungroup": "Ungroup",
