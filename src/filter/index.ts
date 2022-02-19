@@ -60,7 +60,14 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.View.ResourceUse": "div[data-testid='dropdown-option-Resource use']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.ShowOrHideUI": "div[data-testid='dropdown-option-Show/Hide UI']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.MultiplayerCursors": "div[data-testid='dropdown-option-Multiplayer cursors']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.View.Panels": "div[data-testid='dropdown-option-Panels']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.View.Panels.OpenLayersPanel": "div[data-testid='dropdown-option-Open layers panel']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.View.Panels.OpenDesignPanel": "div[data-testid='dropdown-option-Open design panel']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.View.Panels.OpenPrototypePanel": "div[data-testid='dropdown-option-Open prototype panel']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.View.Panels.OpenInspectPanel": "div[data-testid='dropdown-option-Open inspect panel']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.View.Panels.ShowLeftSidebar": "div[data-testid='dropdown-option-Show left sidebar']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.View.ZoomIn": "div[data-testid='dropdown-option-Zoom in']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.ZoomOut": "div[data-testid='dropdown-option-Zoom out']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.ZoomTo100%": "div[data-testid='dropdown-option-Zoom to 100%']>div[class^='multilevel_dropdown--name']",
@@ -84,7 +91,12 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Object.CreateComponent": "div[data-testid='dropdown-option-Create component']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.ResetAllOverrides": "div[data-testid='dropdown-option-Reset all overrides']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.DetachInstance": "div[data-testid='dropdown-option-Detach instance']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.Object.MainComponent": "div[data-testid='dropdown-option-Main component']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.MainComponent.GoToMainComponent": "div[data-testid='dropdown-option-Go to main component']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.MainComponent.PushOverridesToMainComponent": "div[data-testid='dropdown-option-Push overrides to main component']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.MainComponent.RestoreMainComponent": "div[data-testid='dropdown-option-Restore main component']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.Object.BringToFront": "div[data-testid='dropdown-option-Bring to front']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.BringForward": "div[data-testid='dropdown-option-Bring forward']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.SendBackward": "div[data-testid='dropdown-option-Send backward']>div[class^='multilevel_dropdown--name']",
@@ -96,7 +108,13 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Object.Rotate90Right": "div[data-testid='dropdown-option-Rotate 90˚ right']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.FlattenSelection": "div[data-testid='dropdown-option-Flatten selection']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.OutlineStroke": "div[data-testid='dropdown-option-Outline stroke']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.Object.BooleanGroups": "div[data-testid='dropdown-option-Boolean groups']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.BooleanGroups.UnionSelection": "div[data-testid='dropdown-option-Union selection']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.BooleanGroups.SubtractSelection": "div[data-testid='dropdown-option-Subtract selection']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.BooleanGroups.IntersectSelection": "div[data-testid='dropdown-option-Intersect selection']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.BooleanGroups.ExcludeSelection": "div[data-testid='dropdown-option-Exclude selection']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.Object.RasterizeSelection": "div[data-testid='dropdown-option-Rasterize selection']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.ShowOrHideSelection": "div[data-testid='dropdown-option-Show/Hide selection']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.LockOrUnlockSelection": "div[data-testid='dropdown-option-Lock/Unlock selection']>div[class^='multilevel_dropdown--name']",
@@ -107,7 +125,31 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Object.SwapFillAndStroke": "div[data-testid='dropdown-option-Swap fill and stroke']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.Vector": "div[data-testid='dropdown-option-Vector']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Vector.JoinSelection": "div[data-testid='dropdown-option-Join selection']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Vector.SmoothJoinSelection": "div[data-testid='dropdown-option-Smooth join selection']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Vector.DeleteAndHealSelection": "div[data-testid='dropdown-option-Delete and heal selection']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.Text": "div[data-testid='dropdown-option-Text']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Bold": "div[data-testid='dropdown-option-Bold']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Italic": "div[data-testid='dropdown-option-Italic']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Underline": "div[data-testid='dropdown-option-Underline']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Strikethrough": "div[data-testid='dropdown-option-Strikethrough']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.CreateLink": "div[data-testid='dropdown-option-Create link']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.BulletedList": "div[data-testid='dropdown-option-Bulleted list']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.NumberedList": "div[data-testid='dropdown-option-Numbered list']>div[class^='multilevel_dropdown--name']",
+
+    "fullscreenMenu.Text.Alignment": "div[data-testid='dropdown-option-Alignment']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Alignment.TextAlignLeft": "div[data-testid='dropdown-option-Text align left']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Alignment.TextAlignCenter": "div[data-testid='dropdown-option-Text align center']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Alignment.TextAlignRight": "div[data-testid='dropdown-option-Text align right']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Alignment.TextAlignJustified": "div[data-testid='dropdown-option-Text align justified']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Alignment.TextAlignTop": "div[data-testid='dropdown-option-Text align top']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Alignment.TextAlignMiddle": "div[data-testid='dropdown-option-Text align middle']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Alignment.TextAlignBottom": "div[data-testid='dropdown-option-Text align bottom']>div[class^='multilevel_dropdown--name']",
+
+    "fullscreenMenu.Text.Adjust": "div[data-testid='dropdown-option-Adjust']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Text.Case": "div[data-testid='dropdown-option-Case']>div[class^='multilevel_dropdown--name']",
+
     "fullscreenMenu.Arrange": "div[data-testid='dropdown-option-Arrange']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.Plugins": "div[data-testid='dropdown-option-Plugins']>div[class^='multilevel_dropdown--name']",

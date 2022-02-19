@@ -56,7 +56,14 @@ export default {
     "fullscreenMenu.View.ResourceUse": "资源使用情况",
     "fullscreenMenu.View.ShowOrHideUI": "显示/隐藏界面",
     "fullscreenMenu.View.MultiplayerCursors": "多人鼠标指针",
+
     "fullscreenMenu.View.Panels": "面板",
+    "fullscreenMenu.View.Panels.OpenLayersPanel": "打开图层面板",
+    "fullscreenMenu.View.Panels.OpenDesignPanel": "打开设计面板",
+    "fullscreenMenu.View.Panels.OpenPrototypePanel": "打开原型面板",
+    "fullscreenMenu.View.Panels.OpenInspectPanel": "打开检查面板",
+    "fullscreenMenu.View.Panels.ShowLeftSidebar": "显示左侧边栏",
+
     "fullscreenMenu.View.ZoomIn": "放大",
     "fullscreenMenu.View.ZoomOut": "缩小",
     "fullscreenMenu.View.ZoomTo100%": "缩放至 100%",
@@ -80,7 +87,12 @@ export default {
     "fullscreenMenu.Object.CreateComponent": "创建组件",
     "fullscreenMenu.Object.ResetAllOverrides": "重置所有覆盖",
     "fullscreenMenu.Object.DetachInstance": "分离实例",
-    "fullscreenMenu.Object.MainComponent": "转到组件母版",
+
+    "fullscreenMenu.Object.MainComponent": "组件母版",
+    "fullscreenMenu.Object.MainComponent.GoToMainComponent": "转到组件母版",
+    "fullscreenMenu.Object.MainComponent.PushOverridesToMainComponent": "覆盖组件母版",
+    "fullscreenMenu.Object.MainComponent.RestoreMainComponent": "恢复组件母版",
+
     "fullscreenMenu.Object.BringToFront": "移到顶层",
     "fullscreenMenu.Object.BringForward": "上移一层",
     "fullscreenMenu.Object.SendBackward": "下移一层",
@@ -92,7 +104,13 @@ export default {
     "fullscreenMenu.Object.Rotate90Right": "向右旋转 90°",
     "fullscreenMenu.Object.FlattenSelection": "拼合所选项",
     "fullscreenMenu.Object.OutlineStroke": "轮廓化描边",
+
     "fullscreenMenu.Object.BooleanGroups": "布尔组合",
+    "fullscreenMenu.Object.BooleanGroups.UnionSelection": "连集所选项",
+    "fullscreenMenu.Object.BooleanGroups.SubtractSelection": "减去所选项",
+    "fullscreenMenu.Object.BooleanGroups.IntersectSelection": "交集所选项",
+    "fullscreenMenu.Object.BooleanGroups.ExcludeSelection": "差集所选项",
+
     "fullscreenMenu.Object.RasterizeSelection": "像素化所选项",
     "fullscreenMenu.Object.ShowOrHideSelection": "显示/隐藏所选项",
     "fullscreenMenu.Object.LockOrUnlockSelection": "锁定/解锁所选项",
@@ -103,7 +121,31 @@ export default {
     "fullscreenMenu.Object.SwapFillAndStroke": "交换填充和描边",
 
     "fullscreenMenu.Vector": "矢量",
+    "fullscreenMenu.Vector.JoinSelection": "连接所选项",
+    "fullscreenMenu.Vector.SmoothJoinSelection": "平滑连接所选项",
+    "fullscreenMenu.Vector.DeleteAndHealSelection": "删除和修复所选项",
+
     "fullscreenMenu.Text": "文本",
+    "fullscreenMenu.Text.Bold": "加粗",
+    "fullscreenMenu.Text.Italic": "Italic",
+    "fullscreenMenu.Text.Underline": "下划线",
+    "fullscreenMenu.Text.Strikethrough": "`删除线",
+    "fullscreenMenu.Text.CreateLink": "创建链接",
+    "fullscreenMenu.Text.BulletedList": "无序列表",
+    "fullscreenMenu.Text.NumberedList": "有序列表",
+
+    "fullscreenMenu.Text.Alignment": "对齐",
+    "fullscreenMenu.Text.Alignment.TextAlignLeft": "左对齐",
+    "fullscreenMenu.Text.Alignment.TextAlignCenter": "水平居中",
+    "fullscreenMenu.Text.Alignment.TextAlignRight": "右对齐",
+    "fullscreenMenu.Text.Alignment.TextAlignJustified": "两端对齐",
+    "fullscreenMenu.Text.Alignment.TextAlignTop": "上对齐",
+    "fullscreenMenu.Text.Alignment.TextAlignMiddle": "垂直居中",
+    "fullscreenMenu.Text.Alignment.TextAlignBottom": "下对齐",
+
+    "fullscreenMenu.Text.Adjust": "调整",
+    "fullscreenMenu.Text.Case": "大小写",
+
     "fullscreenMenu.Arrange": "排列",
 
     "fullscreenMenu.Plugins": "插件",

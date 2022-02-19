@@ -56,7 +56,14 @@ export default {
     "fullscreenMenu.View.ResourceUse": "Resource use",
     "fullscreenMenu.View.ShowOrHideUI": "Show/Hide UI",
     "fullscreenMenu.View.MultiplayerCursors": "Multiplayer cursors",
+
     "fullscreenMenu.View.Panels": "Panels",
+    "fullscreenMenu.View.Panels.OpenLayersPanel": "Open layers panel",
+    "fullscreenMenu.View.Panels.OpenDesignPanel": "Open design panel",
+    "fullscreenMenu.View.Panels.OpenPrototypePanel": "Open prototype panel",
+    "fullscreenMenu.View.Panels.OpenInspectPanel": "Open inspect panel",
+    "fullscreenMenu.View.Panels.ShowLeftSidebar": "Show left sidebar",
+
     "fullscreenMenu.View.ZoomIn": "Zoom in",
     "fullscreenMenu.View.ZoomOut": "Zoom out",
     "fullscreenMenu.View.ZoomTo100%": "Zoom to 100%",
@@ -80,7 +87,12 @@ export default {
     "fullscreenMenu.Object.CreateComponent": "Create component",
     "fullscreenMenu.Object.ResetAllOverrides": "Reset all overrides",
     "fullscreenMenu.Object.DetachInstance": "Detach instance",
+
     "fullscreenMenu.Object.MainComponent": "Main component",
+    "fullscreenMenu.Object.MainComponent.GoToMainComponent": "Go to main component",
+    "fullscreenMenu.Object.MainComponent.PushOverridesToMainComponent": "Push overrides to main component",
+    "fullscreenMenu.Object.MainComponent.RestoreMainComponent": "Restore main component",
+
     "fullscreenMenu.Object.BringToFront": "Bring to front",
     "fullscreenMenu.Object.BringForward": "Bring forward",
     "fullscreenMenu.Object.SendBackward": "Send backward",
@@ -92,7 +104,13 @@ export default {
     "fullscreenMenu.Object.Rotate90Right": "Rotate 90˚ right",
     "fullscreenMenu.Object.FlattenSelection": "Flatten selection",
     "fullscreenMenu.Object.OutlineStroke": "Outline stroke",
+
     "fullscreenMenu.Object.BooleanGroups": "Boolean groups",
+    "fullscreenMenu.Object.BooleanGroups.UnionSelection": "Union selection",
+    "fullscreenMenu.Object.BooleanGroups.SubtractSelection": "Subtract selection",
+    "fullscreenMenu.Object.BooleanGroups.IntersectSelection": "Intersect selection",
+    "fullscreenMenu.Object.BooleanGroups.ExcludeSelection": "Exclude selection",
+
     "fullscreenMenu.Object.RasterizeSelection": "Rasterize selection",
     "fullscreenMenu.Object.ShowOrHideSelection": "Show/Hide selection",
     "fullscreenMenu.Object.LockOrUnlockSelection": "Lock/Unlock selection",
@@ -103,7 +121,31 @@ export default {
     "fullscreenMenu.Object.SwapFillAndStroke": "Swap fill and stroke",
 
     "fullscreenMenu.Vector": "Vector",
+    "fullscreenMenu.Vector.JoinSelection": "Join selection",
+    "fullscreenMenu.Vector.SmoothJoinSelection": "Smooth join selection",
+    "fullscreenMenu.Vector.DeleteAndHealSelection": "Delete and heal selection",
+
     "fullscreenMenu.Text": "Text",
+    "fullscreenMenu.Text.Bold": "Bold",
+    "fullscreenMenu.Text.Italic": "Italic",
+    "fullscreenMenu.Text.Underline": "Underline",
+    "fullscreenMenu.Text.Strikethrough": "Strikethrough",
+    "fullscreenMenu.Text.CreateLink": "Create link",
+    "fullscreenMenu.Text.BulletedList": "Bulleted list",
+    "fullscreenMenu.Text.NumberedList": "Numbered list",
+
+    "fullscreenMenu.Text.Alignment": "Alignment",
+    "fullscreenMenu.Text.Alignment.TextAlignLeft": "Text align left",
+    "fullscreenMenu.Text.Alignment.TextAlignCenter": "Text align center",
+    "fullscreenMenu.Text.Alignment.TextAlignRight": "Text align right",
+    "fullscreenMenu.Text.Alignment.TextAlignJustified": "Text align justified",
+    "fullscreenMenu.Text.Alignment.TextAlignTop": "Text align top",
+    "fullscreenMenu.Text.Alignment.TextAlignMiddle": "Text align middle",
+    "fullscreenMenu.Text.Alignment.TextAlignBottom": "Text align bottom",
+
+    "fullscreenMenu.Text.Adjust": "Adjust",
+    "fullscreenMenu.Text.Case": "Case",
+
     "fullscreenMenu.Arrange": "Arrange",
 
     "fullscreenMenu.Plugins": "Plugins",
