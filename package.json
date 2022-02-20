@@ -1,6 +1,6 @@
 {
   "name": "figma-i18n",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Figma internationalized script, currently supports English, Simplified Chinese, Traditional Chinese and other languages.",
   "scripts": {
     "dev": "rollup -w -c",

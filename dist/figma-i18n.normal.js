@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name        Figma i18n
 // @namespace   https://github.com/NICEXAI
-// @version     0.0.1
+// @version     0.0.3
 // @description Figma internationalized script, currently supports English, Simplified Chinese, Traditional Chinese and other languages.
 // @encoding    utf-8
-// @author      
-// @homepage    https://github.com/NICEXAI/figma-cn
-// @supportURL  https://github.com/NICEXAI/figma-cn/issues
-// @updateURL   https://github.com/NICEXAI/figma-cn/blob/main/dist/figma-i18n.js
-// @downloadURL https://github.com/NICEXAI/figma-cn/blob/main/dist/figma-i18n.js
+// @author      afeyer
+// @homepage    https://github.com/NICEXAI/figma-i18n
+// @supportURL  https://github.com/NICEXAI/figma-i18n/issues
+// @updateURL   https://github.com/NICEXAI/figma-i18n/blob/main/dist/figma-i18n.normal.js
+// @downloadURL https://github.com/NICEXAI/figma-i18n/blob/main/dist/figma-i18n.normal.js
 // @match       *://www.figma.com/file/*
-// @run-at      document-start
+// @run-at      document-end
 // @icon        https://static.figma.com/app/icon/1/favicon.png
-// @license     Apache; https://github.com/NICEXAI/figma-cn/blob/main/LICENSE
+// @license     Apache; https://github.com/NICEXAI/figma-i18n/blob/main/LICENSE
 // @grant       GM_setValue
 // ==/UserScript==
 (function () {
