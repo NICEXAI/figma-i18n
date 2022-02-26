@@ -1,2 +1,2 @@
 # figma-cn
-Tampermonkey script for figma i8n.
+Tampermonkey script for figma i18n.
