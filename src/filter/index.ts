@@ -280,8 +280,6 @@ export const getTargetElement = function(originElements: Element[]): MatchElemen
             continue
         }
 
-        console.log(element.innerHTML)
-
         for (const elementName in matchRuleDict) {
             if (!Object.prototype.hasOwnProperty.call(matchRuleDict, elementName)) {
                 continue

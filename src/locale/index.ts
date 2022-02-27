@@ -3,11 +3,20 @@ import * as en from "./lang/en"
 
 export interface Language {
     [lang: string]: {
-        [elementName: string]: string
+        name: string
+        dict: {
+            [elementName: string]: string
+        }
     }
 }
 
 export const languageDict = {
-    zhCn: zhCn.default,
-    en: en.default
+    en: {
+        name: "English",
+        dict: en.default
+    },
+    zhCn: {
+        name: "简体中文",
+        dict: zhCn.default
+    }
 }
