@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250" height="58" src="./docs/figma-i18n-logo.png" alt="i18n.js">
+  <img width="250" src="./docs/figma-i18n-logo.png" alt="i18n.js">
 </p>
 
 <p align="center">
