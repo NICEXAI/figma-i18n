@@ -1,6 +1,7 @@
 {
   "name": "figma-i18n",
   "version": "0.0.5",
+  "description": "Tampermonkey script for figma i18n.",
   "private": true,
   "scripts": {
     "build": "rollup -c",
