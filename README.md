@@ -34,7 +34,7 @@
 
 ### ❤️ 捐赠作者
 
-<img width="320" src="./docs/payment.png" />
+<img width="420" src="./docs/payment.png" />
 
 ### 📄 开源许可证
 
