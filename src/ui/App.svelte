@@ -1,10 +1,12 @@
 <script lang="ts">
-	import * as translator from "../translator/index"
+	import * as translator from "../translator"
+	import { langStore } from "../store"
 	import { onMount } from "svelte"
 
 	let langInfoList = translator.langInfoList
 	let openStatus = false
-	let selectLangID = langInfoList[0]?.ID
+	let selectLangID = langStore.status || langInfoList[0]?.ID
+
 
 	const translateStaticDomNodes = () => {
 		translator.languageConverter([document.body], selectLangID)
@@ -34,25 +36,31 @@
 		})
 	}
 
-	const toggleLanguageMenu = () => {
-		openStatus = !openStatus
+	const toggleLanguageMenu = (status?: boolean) => {
+		openStatus = status === undefined? !openStatus: status
 	}
 
 	const switchLanguage = (langID: string) => {
 		selectLangID = langID
+		langStore.status = langID
 		toggleLanguageMenu()
 		translateStaticDomNodes()
 	}
 
 	onMount(() => {
 		console.log("Figma i18n loaded")
+
+		window.addEventListener("click", () => {
+			toggleLanguageMenu(false)
+		})
+
 		translateStaticDomNodes()
 		translateDynamicDomNodes()
 	})
 </script>
 
 <div class="fi_lang_wrap">
-	<div class="fi_lang_toolbar" on:click={toggleLanguageMenu}>
+	<div class="fi_lang_toolbar" on:click|stopPropagation={() => {toggleLanguageMenu()}}>
 		<span class="fi_svg-container">
 			<svg
 				class="icon"
@@ -96,7 +104,7 @@
 			{#each langInfoList as langInfo}
 				<div
 					class="fi_lang-container-list"
-					on:click={() => switchLanguage(langInfo.ID)}
+					on:click|stopPropagation={() => switchLanguage(langInfo.ID)}
 				>
 					<span class="fi_container-icon">
 						{#if selectLangID == langInfo.ID}
