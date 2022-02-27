@@ -31,3 +31,11 @@
 ### 📺 功能演示
 
 ![Fiama I18n 脚本演示](./docs/figma-i18n-demo.gif)
+
+### ❤️ 捐赠作者
+
+<img width="320" src="./docs/payment.png" />
+
+### 📄 开源许可证
+
+[Apache License](https://github.com/NICEXAI/figma-i18n/blob/main/LICENSE) © 2022-PRESENT [Afeyer](https://github.com/NICEXAI)
