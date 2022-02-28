@@ -1,7 +1,7 @@
 import App from './ui/App.svelte';
 
 const app = new App({
-	target: document.querySelector("div[class*='toolbar_view--rightButtonGroup']"),
+	target: document.body,
 });
 
 export default app;

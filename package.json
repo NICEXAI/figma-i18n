@@ -1,7 +1,8 @@
 {
   "name": "figma-i18n",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Powerful, intelligent and easy to use Figma internationalisation scripts.",
+  "author": "afeyer",
   "private": true,
   "scripts": {
     "build": "rollup -c",
