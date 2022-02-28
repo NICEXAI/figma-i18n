@@ -26,13 +26,18 @@
 			const homeNode = getHomeTargetNode()
 			const designNode = getDesignTargetNode()
 
-			if((homeNode && pageStatus == designTag) || (designNode && pageStatus == homeTag)) {
+			if((homeNode && pageStatus != homeTag) || (designNode && pageStatus != designTag)) {
 				pageStatus = pageStatus == homeTag? designTag: homeTag
 				if(menuIns && menuIns.$destroy) {
 					menuIns.$destroy()
 				}
 				menuIns = new Menu({
 					target: homeNode || designNode
+				})
+
+				menuIns.$on("langChange", (event) => {
+					selectLangID = event.detail
+					translator.languageConverter([document.body], selectLangID)
 				})
 			}
 
