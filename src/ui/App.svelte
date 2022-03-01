@@ -8,6 +8,11 @@
 	let selectLangID = langStore.status || langInfoList[0]?.ID
 	let menuIns = null
 
+	enum Mode {
+		Dark = "Dark",
+		Light = "Light"
+	}
+
 	const getHomeTargetNode = () => {
 		return document.querySelectorAll(
 			"div[class^='navbar--navbarContainer']>div "
@@ -22,6 +27,10 @@
 		return document.querySelector("div[class='fi_lang_wrap']")
 	}
 
+	const isDesignPage = () => {
+		return !!document.querySelector("div[class*='delightful_toolbar--delightfulToolbarMask']")
+	}
+
 	const initMenuController = () => {
 		const menuNode = getMenuTargetNode()
 		if(menuNode) {
@@ -34,6 +43,9 @@
 
 		menuIns = new Menu({
 			target: getHomeTargetNode() || getEditorTargetNode(),
+			props: {
+				mode: isDesignPage()? Mode.Light: Mode.Dark
+			}
 		})
 
 		menuIns.$on("langChange", event => {
