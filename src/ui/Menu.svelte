@@ -3,11 +3,14 @@
 	import { langStore } from "../store"
 	import { onDestroy, onMount, createEventDispatcher } from "svelte"
 
-	// Menu mode: Dark, Light
-	// Default: Dark
-	export let mode = "Dark"
-
 	const dispath = createEventDispatcher()
+
+	enum Mode {
+		Dark = "Dark",
+		Light = "Light"
+	}
+
+	export let mode: Mode
 
 	let langInfoList = translator.langInfoList
 	let openStatus = false
@@ -30,7 +33,6 @@
 
 	onMount(() => {
 		console.log("Figma i18n menu loaded")
-		console.log(mode)
 
 		window.addEventListener("click", closeLanguageMenu)
 	})

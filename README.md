@@ -30,7 +30,9 @@
   
 ### 📺 功能演示
 
-![Fiama I18n 脚本演示](./docs/figma-i18n-demo.gif)
+![Fiama I18n 脚本演示](./docs/figma-i18n-dark.gif)
+
+![Fiama I18n 脚本演示](./docs/figma-i18n-light.gif)
 
 ### ❤️ 捐赠作者
 
