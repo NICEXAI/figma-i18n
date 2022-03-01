@@ -209,6 +209,7 @@ export default {
     "fullscreenMenu.Libraries": "Libraries",
 
     "fullscreenMenu.GetDesktopApp": "Get desktop app",
+    "fullscreenMenu.OpenInDesktopApp": "Open in desktop app",
 
     "fullscreenMenu.HelpAndAccount": "Help and account",
     "fullscreenMenu.HelpAndAccount.HelpPage": "Help page",

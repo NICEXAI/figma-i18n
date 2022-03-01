@@ -212,6 +212,7 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Libraries": "div[data-testid='dropdown-option-Libraries']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.GetDesktopApp": "div[data-testid='dropdown-option-Get desktop app']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.OpenInDesktopApp": "div[data-testid='dropdown-option-Open in desktop app']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.HelpAndAccount": "div[data-testid='dropdown-option-Help and account']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.HelpAndAccount.HelpPage": "div[data-testid='dropdown-option-Help page']>div[class^='multilevel_dropdown--name']",
@@ -279,6 +280,8 @@ export const getTargetElement = function(originElements: Element[]): MatchElemen
         if(!element.querySelector) {
             continue
         }
+
+        console.log(element.innerHTML)
 
         for (const elementName in matchRuleDict) {
             if (!Object.prototype.hasOwnProperty.call(matchRuleDict, elementName)) {

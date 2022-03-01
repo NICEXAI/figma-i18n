@@ -10,7 +10,7 @@
 
 	enum Mode {
 		Dark = "Dark",
-		Light = "Light"
+		Light = "Light",
 	}
 
 	const getHomeTargetNode = () => {
@@ -28,12 +28,14 @@
 	}
 
 	const isDesignPage = () => {
-		return !!document.querySelector("div[class*='delightful_toolbar--delightfulToolbarMask']")
+		return !!document.querySelector(
+			"div[class*='delightful_toolbar--delightfulToolbarMask']"
+		)
 	}
 
 	const initMenuController = () => {
 		const menuNode = getMenuTargetNode()
-		if(menuNode) {
+		if (menuNode) {
 			return
 		}
 
@@ -44,8 +46,8 @@
 		menuIns = new Menu({
 			target: getHomeTargetNode() || getEditorTargetNode(),
 			props: {
-				mode: isDesignPage()? Mode.Light: Mode.Dark
-			}
+				mode: isDesignPage() ? Mode.Light : Mode.Dark,
+			},
 		})
 
 		menuIns.$on("langChange", event => {
@@ -64,6 +66,7 @@
 			if (!nodes || nodes.length == 0) {
 				continue
 			}
+
 			nodes.forEach(node => {
 				originElements.push(<Element>node)
 			})

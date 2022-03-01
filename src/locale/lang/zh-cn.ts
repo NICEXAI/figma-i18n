@@ -209,6 +209,7 @@ export default {
     "fullscreenMenu.Libraries": "组件库",
 
     "fullscreenMenu.GetDesktopApp": "下载桌面版应用",
+    "fullscreenMenu.OpenInDesktopApp": "在桌面应用中打开",
 
     "fullscreenMenu.HelpAndAccount": "帮助和账户",
     "fullscreenMenu.HelpAndAccount.HelpPage": "帮助页面",
