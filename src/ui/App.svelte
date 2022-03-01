@@ -4,56 +4,60 @@
 	import { onDestroy, onMount } from "svelte"
 	import Menu from "./Menu.svelte"
 
-	const homeTag = "Home"
-	const designTag = "Design"
-
 	let langInfoList = translator.langInfoList
 	let selectLangID = langStore.status || langInfoList[0]?.ID
 	let menuIns = null
-	let pageStatus = ""
 
 	const getHomeTargetNode = () => {
-		return document.querySelectorAll("div[class^='navbar--navbarContainer']>div ")[1]
+		return document.querySelectorAll(
+			"div[class^='navbar--navbarContainer']>div "
+		)[1]
 	}
-	const getDesignTargetNode = () => {
-		return document.querySelector("div[class*='toolbar_view--rightButtonGroup']")
+	const getEditorTargetNode = () => {
+		return document.querySelector(
+			"div[class*='toolbar_view--rightButtonGroup']"
+		)
 	}
-	const getFigJamTargetNode = () => {
-		return document.querySelectorAll("div[class^='toolbar_view--buttonGroup']")[2]
+	const getMenuTargetNode = () => {
+		return document.querySelector("div[class='fi_lang_wrap']")
+	}
+
+	const initMenuController = () => {
+		const menuNode = getMenuTargetNode()
+		if(menuNode) {
+			return
+		}
+
+		if (menuIns && menuIns.$destroy) {
+			menuIns.$destroy()
+		}
+
+		menuIns = new Menu({
+			target: getHomeTargetNode() || getEditorTargetNode(),
+		})
+
+		menuIns.$on("langChange", event => {
+			selectLangID = event.detail
+			translator.languageConverter([document.body], selectLangID)
+		})
 	}
 
 	let observer = new MutationObserver(function (mutations) {
-			const homeNode = getHomeTargetNode()
-			const designNode = getDesignTargetNode()
+		initMenuController()
 
-			if((homeNode && pageStatus != homeTag) || (designNode && pageStatus != designTag)) {
-				pageStatus = pageStatus == homeTag? designTag: homeTag
-				if(menuIns && menuIns.$destroy) {
-					menuIns.$destroy()
-				}
-				menuIns = new Menu({
-					target: homeNode || designNode
-				})
+		let originElements: Element[] = []
 
-				menuIns.$on("langChange", (event) => {
-					selectLangID = event.detail
-					translator.languageConverter([document.body], selectLangID)
-				})
+		for (const mutation of mutations) {
+			const nodes = mutation.addedNodes
+			if (!nodes || nodes.length == 0) {
+				continue
 			}
+			nodes.forEach(node => {
+				originElements.push(<Element>node)
+			})
+		}
 
-			let originElements: Element[] = []
-
-			for (const mutation of mutations) {
-				const nodes = mutation.addedNodes
-				if (!nodes || nodes.length == 0) {
-					continue
-				}
-				nodes.forEach(node => {
-					originElements.push(<Element>node)
-				})
-			}
-
-			translator.languageConverter(originElements, selectLangID)
+		translator.languageConverter(originElements, selectLangID)
 	})
 
 	onMount(() => {
@@ -67,31 +71,13 @@
 			characterData: true,
 		})
 
-		let currentNode = getHomeTargetNode()
-		if(currentNode) {
-			pageStatus = homeTag
-		} else {
-			currentNode = getDesignTargetNode()
-			if(currentNode) {
-				pageStatus = designTag
-			}
-		}
-
-		menuIns = new Menu({
-			target: currentNode
-		})
-
-		menuIns.$on("langChange", (event) => {
-			selectLangID = event.detail
-			translator.languageConverter([document.body], selectLangID)
-		})
-
+		initMenuController()
 	})
 
 	onDestroy(() => {
 		observer.disconnect()
 
-		if(menuIns && menuIns.$destroy) {
+		if (menuIns && menuIns.$destroy) {
 			menuIns.$destroy()
 		}
 	})
