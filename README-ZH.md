@@ -17,7 +17,7 @@
 
 1. 安装 Figma I18n 脚本之前请确认浏览器是否已安装脚本管理器，如果没有则点击下方链接任选一个进行安装即可
    
-   * [Tampermonkey（油猴，推荐）](https://www.tampermonkey.net/)
+   * [Tampermonkey（油猴，推荐👍）](https://www.tampermonkey.net/)
    * [Violentmonkey（暴力猴）](https://violentmonkey.github.io/get-it/)
   
 2. 点击下方链接，通过 [GreasyFork](https://greasyfork.org/zh-CN) 安装用户脚本
