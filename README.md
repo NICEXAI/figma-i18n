@@ -1,44 +1,47 @@
 <p align="center">
   <img width="250" src="./docs/figma-i18n-logo.png" alt="i18n.js">
   <br>
-  强大、智能并且简单易用的 Figma 国际化脚本
+  Powerful, intelligent and easy to use Figma internationalisation scripts
   <br>
   <br>
   <a href="https://svelte.dev/"><img src="https://img.shields.io/:Svelte-3.0.0-green.svg" alt="Apache License"></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/:TypeScript-4.0.0-yellow.svg" alt="Apache License"></a>
   <a href="https://github.com/NICEXAI/figma-i18n/blob/main/LICENSE"><img src="https://img.shields.io/:License-Apache-blue.svg" alt="Apache License"></a>
+  <br>
+  <br>
+  English | <a href="./README-ZH.md">中文</a>
 </p>
 
 
-### 💽 脚本安装
+### 💽 Script Installation
 
-1. 安装 Figma I18n 脚本之前请确认浏览器是否已安装脚本管理器，如果已安装则直接进入第二步；如果没有则点击下方链接任选一个进行安装即可
+1. Before installing the Figma I18n script, please confirm whether the script manager is installed in the browser. If not, click the link below to choose one to install it.
    
-   * [Tampermonkey（油猴，推荐）](https://www.tampermonkey.net/)
-   * [Violentmonkey（暴力猴）](https://violentmonkey.github.io/get-it/)
+   * [Tampermonkey](https://www.tampermonkey.net/) 👍
+   * [Violentmonkey](https://violentmonkey.github.io/get-it/)
   
-2. 点击下方链接，通过 [GreasyFork](https://greasyfork.org/zh-CN) 安装用户脚本
+2. Click the link below to install the user script via [GreasyFork](https://greasyfork.org/zh-CN)
    
-   [Figma I18n：点击我安装脚本！！！](https://greasyfork.org/zh-CN/scripts/440348-figma-i18n)
+   [Figma I18n：Click me to install the script !!!](https://greasyfork.org/zh-CN/scripts/440348-figma-i18n)
 
-### 📚 脚本特性
+### 📚 Script Features
 
-* 简单易用：无需额外安装插件且支持手动进行语言切换，无需频繁关闭/启用插件
-* 多语言支持：支持英文、简体中文切换，繁体中文以及其它语言将会逐步支持
-* 智能切换主题：操作菜单支持根据操作页面自动切换主题
-* 精准的语言转换：精准识别所有需要进行语言转换的DOM节点，解决通过字符串匹配导致翻译不准确的问题
-* 优秀的转换效率：充分复用已有节点，最大程度减少每次操作节点的次数，大幅度提高转换效率
+* Simple to use：No need to install additional plug-ins and manual language switching is supported, eliminating the need to turn plug-ins off/on frequently
+* Multi-language support：Support English and Simplified Chinese switch, Traditional Chinese and other languages will be supported gradually
+* Smart switch theme：The action menu supports automatic theme switching according to the page
+* Precise language conversion：Accurately identify all DOM nodes that require language conversion, and solve the problem of inaccurate translation caused by string matching
+* Excellent conversion efficiency：Fully reuse existing nodes, minimize the number of operations on each node, and greatly improve conversion efficiency
   
-### 📺 功能演示
+### 📺 Function demonstration
 
-![Fiama I18n 脚本演示](./docs/figma-i18n-dark.gif)
+![Fiama I18n Demo](./docs/figma-i18n-dark.gif)
 
-![Fiama I18n 脚本演示](./docs/figma-i18n-light.gif)
+![Fiama I18n Demo](./docs/figma-i18n-light.gif)
 
-### ❤️ 捐赠作者
+### ❤️ Sponsored Author
 
 <img width="420" src="./docs/payment.png" />
 
-### 📄 开源许可证
+### 📄 Open Source License
 
 [Apache License](https://github.com/NICEXAI/figma-i18n/blob/main/LICENSE) © 2022-PRESENT [Afeyer](https://github.com/NICEXAI)
