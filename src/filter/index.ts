@@ -247,6 +247,8 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Disabled": "div[data-testid='dropdown-option-Disabled']>div[class^='multilevel_dropdown--name']",
 
 
+    // "toolbarView.fileName.folderName.Drafts": "XPATH://div[contains(@class, 'filename_view--folder')]//div[text()='Drafts']",
+
     "toolbarView.moveFlyout.flyout.toolDefault": "a[data-testid='toolbarView.moveFlyout.flyout.toolDefault']>div[class^='action_option--text']",
     "toolbarView.moveFlyout.flyout.toolScale": "a[data-testid='toolbarView.moveFlyout.flyout.toolScale']>div[class^='action_option--text']",
 
@@ -263,6 +265,8 @@ const matchRuleDict:MatchRule = {
 
     "toolbarView.penFlyout.flyout.toolPen": "a[data-testid='toolbarView.penFlyout.flyout.toolPen']>div[class^='action_option--text']",
     "toolbarView.penFlyout.flyout.toolPencil": "a[data-testid='toolbarView.penFlyout.flyout.toolPencil']>div[class^='action_option--text']",
+
+    "toolbarView.Share": "div[data-testid='multiplayer-toolbar-share-button']",
 
     "toolbarView.CursorChat": "div[data-testid='dropdown-option-Cursor chat']>div[class^='multilevel_dropdown--name']",
     "toolbarView.Stamp": "div[data-testid='dropdown-option-Stamp']>div[class^='multilevel_dropdown--name']",
@@ -293,7 +297,25 @@ const matchRuleDict:MatchRule = {
     "contextMenu.ShowOrHideComments": "div[data-testid='dropdown-option-Show/Hide comments']>div[class^='multilevel_dropdown--name']",
 
 
-    "pagesPanel.Tab": "div[class*='pages_panel--tabsHeader']>div[class*='pages_panel--tab']->attr:data-label",
+    "pagesPanel.Sidebar.Tab": "div[class*='pages_panel--tabsHeader']>div[class*='pages_panel--tab']->attr:data-label",
+    "pagesPanel.Sidebar.AssetsTab": "div[class*='pages_panel--tabsHeader']>div[class*='pages_panel--assetsTab']>div[class*='pages_panel--tab']->attr:data-label",
+
+    "pagesPanel.Sidebar.Pages": "div[class*='pages_panel--pagesHeaderContainer']>div[class*='pages_panel--pagesHeaderText']",
+    "pagesPanel.Sidebar.Pages.CopyLinkToPage": "div[data-testid='dropdown-option-Copy link to page']>div[class^='multilevel_dropdown--name']",
+    "pagesPanel.Sidebar.Pages.DeletePage": "div[data-testid='dropdown-option-Delete page']>div[class^='multilevel_dropdown--name']",
+    "pagesPanel.Sidebar.Pages.RenamePage": "div[data-testid='dropdown-option-Rename page']>div[class^='multilevel_dropdown--name']",
+    "pagesPanel.Sidebar.Pages.DuplicatePage": "div[data-testid='dropdown-option-Duplicate page']>div[class^='multilevel_dropdown--name']",
+
+    "pagesPanel.Sidebar.AddNewPage": "div[class*='pages_panel--pagesHeaderContainer'] span[aria-label='Add new page']->attr:data-tooltip",
+    "pagesPanel.Sidebar.Search": "div[class*='component_sidebar--headerContainer'] input[class*='search--searchInput__DEPRECATED']->attr:placeholder",
+    "pagesPanel.Sidebar.ShowAsList": "div[class*='component_sidebar--headerContainer'] span[aria-label='Show as list']->attr:data-tooltip",
+    "pagesPanel.Sidebar.ShowAsGrid": "div[class*='component_sidebar--headerContainer'] span[aria-label='Show as grid']->attr:data-tooltip",
+    "pagesPanel.Sidebar.TeamLibrary": "div[class*='component_sidebar--headerContainer'] span[aria-label='Team library']->attr:data-tooltip",
+
+
+    "propertiesPanel.TabsHeader.Design": "XPATH://div[contains(@class, 'properties_panel--tabsHeader')]//div[text()='Design']->attr:data-label",
+    "propertiesPanel.TabsHeader.Prototype": "XPATH://div[contains(@class, 'properties_panel--tabsHeader')]//div[text()='Prototype']->attr:data-label",
+    "propertiesPanel.TabsHeader.Inspect": "XPATH://div[contains(@class, 'properties_panel--tabsHeader')]//div[text()='Inspect']->attr:data-label",
 }
 
 type SelectType = "CSS" | "XPATH"

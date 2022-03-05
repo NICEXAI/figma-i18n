@@ -261,6 +261,8 @@ export default {
     "toolbarView.penFlyout.flyout.toolPen": "钢笔",
     "toolbarView.penFlyout.flyout.toolPencil": "铅笔",
 
+    "toolbarView.Share": "分享",
+
     "toolbarView.CursorChat": "聚焦聊天框",
     "toolbarView.Stamp": "印章",
     "toolbarView.Emote": "表情",
@@ -290,5 +292,23 @@ export default {
     "contextMenu.ShowOrHideComments": "显示/隐藏评论",
 
 
-    "pagesPanel.Tab": "图层",
+    "pagesPanel.Sidebar.Tab": "图层",
+    "pagesPanel.Sidebar.AssetsTab": "资源",
+
+    "pagesPanel.Sidebar.Pages": "页面",
+    "pagesPanel.Sidebar.Pages.CopyLinkToPage": "复制页面链接",
+    "pagesPanel.Sidebar.Pages.DeletePage": "删除页面",
+    "pagesPanel.Sidebar.Pages.RenamePage": "重命名页面",
+    "pagesPanel.Sidebar.Pages.DuplicatePage": "创建页面副本",
+
+    "pagesPanel.Sidebar.AddNewPage": "添加新页面",
+    "pagesPanel.Sidebar.Search": "搜索",
+    "pagesPanel.Sidebar.ShowAsList": "显示为列表",
+    "pagesPanel.Sidebar.ShowAsGrid": "显示为网格",
+    "pagesPanel.Sidebar.TeamLibrary": "团队组件库",
+
+
+    "propertiesPanel.TabsHeader.Design": "设计",
+    "propertiesPanel.TabsHeader.Prototype": "原型",
+    "propertiesPanel.TabsHeader.Inspect": "检查",
 }

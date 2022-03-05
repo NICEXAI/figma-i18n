@@ -243,7 +243,7 @@ export default {
     "fullscreenMenu.ZoomTo200": "Zoom to 200%",
     "fullscreenMenu.Disabled": "Disabled",
 
-
+    
     "toolbarView.moveFlyout.flyout.toolDefault": "Move",
     "toolbarView.moveFlyout.flyout.toolScale": "Scale",
 
@@ -260,6 +260,8 @@ export default {
 
     "toolbarView.penFlyout.flyout.toolPen": "Pen",
     "toolbarView.penFlyout.flyout.toolPencil": "Pencil",
+
+    "toolbarView.Share": "Share",
 
     "toolbarView.CursorChat": "Cursor chat",
     "toolbarView.Stamp": "Stamp",
@@ -290,5 +292,23 @@ export default {
     "contextMenu.ShowOrHideComments": "Show/Hide comments",
 
 
-    "pagesPanel.Tab": "Layers",
+    "pagesPanel.Sidebar.Tab": "Layers",
+    "pagesPanel.Sidebar.AssetsTab": "Assets",
+
+    "pagesPanel.Sidebar.Pages": "Pages",
+    "pagesPanel.Sidebar.Pages.CopyLinkToPage": "Copy link to page",
+    "pagesPanel.Sidebar.Pages.DeletePage": "Delete page",
+    "pagesPanel.Sidebar.Pages.RenamePage": "Rename page",
+    "pagesPanel.Sidebar.Pages.DuplicatePage": "Duplicate page",
+
+    "pagesPanel.Sidebar.AddNewPage": "Add new page",
+    "pagesPanel.Sidebar.Search": "Search",
+    "pagesPanel.Sidebar.ShowAsList": "Show as list",
+    "pagesPanel.Sidebar.ShowAsGrid": "Show as grid",
+    "pagesPanel.Sidebar.TeamLibrary": "Team library",
+
+
+    "propertiesPanel.TabsHeader.Design": "Design",
+    "propertiesPanel.TabsHeader.Prototype": "Prototype",
+    "propertiesPanel.TabsHeader.Inspect": "Inspect",
 }
