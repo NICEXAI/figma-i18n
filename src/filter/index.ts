@@ -12,11 +12,13 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.File.NewFigJamFile": "div[data-testid='dropdown-option-New FigJam file']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.File.NewFromSketchFile": "div[data-testid='dropdown-option-New from Sketch file…']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.File.PlaceImage": "div[data-testid='dropdown-option-Place image...']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.File.ImportFromCSV": "div[data-testid='dropdown-option-Import from CSV…']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.File.SaveLocalCopy": "div[data-testid='dropdown-option-Save local copy…']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.File.SaveToVersionHistory": "div[data-testid='dropdown-option-Save to version history…']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.File.ShowVersionHistory": "div[data-testid='dropdown-option-Show version history']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.File.Export": "div[data-testid='dropdown-option-Export…']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.File.ExportFramesToPDF": "div[data-testid='dropdown-option-Export frames to PDF…']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.File.ExportAs": "div[data-testid='dropdown-option-Export as…']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.Edit": "div[data-testid='dropdown-option-Edit']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Edit.Undo": "div[data-testid='dropdown-option-Undo']>div[class^='multilevel_dropdown--name']",
@@ -57,6 +59,7 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.View.PixelPreview": "div[data-testid='dropdown-option-Pixel preview']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.MaskOutlines": "div[data-testid='dropdown-option-Mask outlines']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.FrameOutlines": "div[data-testid='dropdown-option-Frame outlines']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.View.ShowDotGrid": "div[data-testid='dropdown-option-Show dot grid']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.ResourceUse": "div[data-testid='dropdown-option-Resource use']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.ShowOrHideUI": "div[data-testid='dropdown-option-Show/Hide UI']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.View.MultiplayerCursors": "div[data-testid='dropdown-option-Multiplayer cursors']>div[class^='multilevel_dropdown--name']",
@@ -86,6 +89,7 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Object.FrameSelection": "div[data-testid='dropdown-option-Frame selection']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.UngroupSelection": "div[data-testid='dropdown-option-Ungroup selection']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.UseAsMask": "div[data-testid='dropdown-option-Use as mask']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Object.RestoreDefaultThumbnail": "div[data-testid='dropdown-option-Restore default thumbnail']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.SetAsThumbnail": "div[data-testid='dropdown-option-Set as thumbnail']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.AddAutoLayout": "div[data-testid='dropdown-option-Add auto layout']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Object.CreateComponent": "div[data-testid='dropdown-option-Create component']>div[class^='multilevel_dropdown--name']",
@@ -185,8 +189,14 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Arrange.DistributeBottom": "div[data-testid='dropdown-option-Distribute bottom']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.Plugins": "div[data-testid='dropdown-option-Plugins']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Plugins.RunLastPlugin": "div[data-testid='dropdown-option-Run last plugin']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Plugins.ManagePlugins": "div[data-testid='dropdown-option-Manage plugins…']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Plugins.BrowsePluginsInCommunity": "div[data-testid='dropdown-option-Browse plugins in Community']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Plugins.BrowsePlugins": "div[data-testid='dropdown-option-Browse plugins']>div[class^='multilevel_dropdown--name']",
+
+    "fullscreenMenu.Widgets": "div[data-testid='dropdown-option-Widgets']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Widgets.BrowseWidgets": "div[data-testid='dropdown-option-Browse widgets']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Widgets.SelectAllWidgets": "div[data-testid='dropdown-option-Select all widgets']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.Integrations": "div[data-testid='dropdown-option-Integrations']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Integrations.Dribbble": "div[data-testid='dropdown-option-Dribbble']>div[class^='multilevel_dropdown--name']",
@@ -194,6 +204,7 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Preferences": "div[data-testid='dropdown-option-Preferences']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.SnapToGeometry": "div[data-testid='dropdown-option-Snap to geometry']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.SnapToObjects": "div[data-testid='dropdown-option-Snap to objects']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Preferences.SnapToDotGrid": "div[data-testid='dropdown-option-Snap to dot grid']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.SnapToPixelGrid": "div[data-testid='dropdown-option-Snap to pixel grid']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.KeepToolSelectedAfterUse": "div[data-testid='dropdown-option-Keep tool selected after use']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.HighlightLayersOnHover": "div[data-testid='dropdown-option-Highlight layers on hover']>div[class^='multilevel_dropdown--name']",
@@ -206,8 +217,10 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Preferences.FlipObjectsWhileResizing": "div[data-testid='dropdown-option-Flip objects while resizing']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.InvertZoomDirection": "div[data-testid='dropdown-option-Invert zoom direction']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.UseNumberKeysForOpacity": "div[data-testid='dropdown-option-Use number keys for opacity']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Preferences.ShakeCursorForHighFive": "div[data-testid='dropdown-option-Shake cursor for high five']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.OpenLinksInDesktopApp": "div[data-testid='dropdown-option-Open links in desktop app']>div[class^='multilevel_dropdown--name']",
     "fullscreenMenu.Preferences.NudgeAmount": "div[data-testid='dropdown-option-Nudge amount…']>div[class^='multilevel_dropdown--name']",
+    "fullscreenMenu.Preferences.ShowTemplatesForNewFiles": "div[data-testid='dropdown-option-Show templates for new files']>div[class^='multilevel_dropdown--name']",
 
     "fullscreenMenu.Libraries": "div[data-testid='dropdown-option-Libraries']>div[class^='multilevel_dropdown--name']",
 
@@ -251,8 +264,20 @@ const matchRuleDict:MatchRule = {
     "toolbarView.penFlyout.flyout.toolPen": "a[data-testid='toolbarView.penFlyout.flyout.toolPen']>div[class^='action_option--text']",
     "toolbarView.penFlyout.flyout.toolPencil": "a[data-testid='toolbarView.penFlyout.flyout.toolPencil']>div[class^='action_option--text']",
 
+    "toolbarView.CursorChat": "div[data-testid='dropdown-option-Cursor chat']>div[class^='multilevel_dropdown--name']",
+    "toolbarView.Stamp": "div[data-testid='dropdown-option-Stamp']>div[class^='multilevel_dropdown--name']",
+    "toolbarView.Emote": "div[data-testid='dropdown-option-Emote']>div[class^='multilevel_dropdown--name']",
+
+    "toolbarView.Overflow.Emote": "XPATH://a[@data-testid='overflow.emote']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
+    "toolbarView.Overflow.Stamp": "XPATH://a[@data-testid='overflow.stamp']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
+    "toolbarView.Overflow.CursorChat": "XPATH://a[@data-testid='overflow.chat']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
+    "toolbarView.Overflow.HighFive": "XPATH://a[@data-testid='overflow.highFive']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
+    "toolbarView.Overflow.Timer": "XPATH://a[@data-testid='overflow.timer']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
+    
+
 
     "contextMenu.Copy": "div[data-testid='dropdown-option-Copy']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.Paste": "div[data-testid='dropdown-option-Paste']>div[class^='multilevel_dropdown--name']",
     "contextMenu.PasteHere": "div[data-testid='dropdown-option-Paste here']>div[class^='multilevel_dropdown--name']",
 
     "contextMenu.CopyOrPasteAs": "div[data-testid='dropdown-option-Copy/Paste as']>div[class^='multilevel_dropdown--name']",
@@ -265,8 +290,6 @@ const matchRuleDict:MatchRule = {
     "contextMenu.LockOrUnlock": "div[data-testid='dropdown-option-Lock/Unlock']>div[class^='multilevel_dropdown--name']",
 
     "contextMenu.ShowOrHideComments": "div[data-testid='dropdown-option-Show/Hide comments']>div[class^='multilevel_dropdown--name']",
-
-    "contextMenu.CursorChat": "div[data-testid='dropdown-option-Cursor chat']>div[class^='multilevel_dropdown--name']"
 }
 
 interface MatchElement {
@@ -289,9 +312,16 @@ export const getTargetElement = function(originElements: Element[]): MatchElemen
             }
 
             const rule = matchRuleDict[elementName]
-            const target = (<Element>element).querySelector(rule)
+            let target:Element
 
-            if(target && target?.nodeType == 1) {
+            if(rule.startsWith("XPATH:")) {
+                target = <Element>(document.evaluate(rule.replace("XPATH:", ""), <Element>element).iterateNext())
+                console.log(target, 123)
+            } else {
+                target = (<Element>element).querySelector(rule)
+            }
+
+            if(target && (target?.nodeType == 1 || target?.nodeType == 3)) {
                 matchElement[elementName] = target
             }
         }

@@ -8,11 +8,13 @@ export default {
     "fullscreenMenu.File.NewFigJamFile": "New FigJam file",
     "fullscreenMenu.File.NewFromSketchFile": "New from Sketch file…",
     "fullscreenMenu.File.PlaceImage": "Place image...",
+    "fullscreenMenu.File.ImportFromCSV": "Import from CSV…",
     "fullscreenMenu.File.SaveLocalCopy": "Save local copy…",
     "fullscreenMenu.File.SaveToVersionHistory": "Save to version history…",
     "fullscreenMenu.File.ShowVersionHistory": "Show version history",
     "fullscreenMenu.File.Export": "Export…",
     "fullscreenMenu.File.ExportFramesToPDF": "Export frames to PDF…",
+    "fullscreenMenu.File.ExportAs": "Export as…",
 
     "fullscreenMenu.Edit": "Edit",
     "fullscreenMenu.Edit.Undo": "Undo",
@@ -53,6 +55,7 @@ export default {
     "fullscreenMenu.View.PixelPreview": "Pixel preview",
     "fullscreenMenu.View.MaskOutlines": "Mask outlines",
     "fullscreenMenu.View.FrameOutlines": "Frame outlines",
+    "fullscreenMenu.View.ShowDotGrid": "Show dot grid",
     "fullscreenMenu.View.ResourceUse": "Resource use",
     "fullscreenMenu.View.ShowOrHideUI": "Show/Hide UI",
     "fullscreenMenu.View.MultiplayerCursors": "Multiplayer cursors",
@@ -82,6 +85,7 @@ export default {
     "fullscreenMenu.Object.FrameSelection": "Frame selection",
     "fullscreenMenu.Object.UngroupSelection": "Ungroup selection",
     "fullscreenMenu.Object.UseAsMask": "Use as mask",
+    "fullscreenMenu.Object.RestoreDefaultThumbnail": "Restore default thumbnail",
     "fullscreenMenu.Object.SetAsThumbnail": "Set as thumbnail",
     "fullscreenMenu.Object.AddAutoLayout": "Add auto layout",
     "fullscreenMenu.Object.CreateComponent": "Create component",
@@ -182,8 +186,14 @@ export default {
     "fullscreenMenu.Arrange.DistributeBottom": "Distribute bottom",
 
     "fullscreenMenu.Plugins": "Plugins",
+    "fullscreenMenu.Plugins.RunLastPlugin": "Run last plugin",
     "fullscreenMenu.Plugins.ManagePlugins": "Manage plugins…",
     "fullscreenMenu.Plugins.BrowsePluginsInCommunity": "Browse plugins in Community",
+    "fullscreenMenu.Plugins.BrowsePlugins": "Browse plugins",
+
+    "fullscreenMenu.Widgets": "Widgets",
+    "fullscreenMenu.Widgets.BrowseWidgets": "Browse widgets",
+    "fullscreenMenu.Widgets.SelectAllWidgets": "Select all widgets",
 
     "fullscreenMenu.Integrations": "Integrations",
     "fullscreenMenu.Integrations.Dribbble": "Dribbble",
@@ -191,6 +201,7 @@ export default {
     "fullscreenMenu.Preferences": "Preferences",
     "fullscreenMenu.Preferences.SnapToGeometry": "Snap to geometry",
     "fullscreenMenu.Preferences.SnapToObjects": "Snap to objects",
+    "fullscreenMenu.Preferences.SnapToDotGrid": "Snap to dot grid",
     "fullscreenMenu.Preferences.SnapToPixelGrid": "Snap to pixel grid",
     "fullscreenMenu.Preferences.KeepToolSelectedAfterUse": "Keep tool selected after use",
     "fullscreenMenu.Preferences.HighlightLayersOnHover": "Highlight layers on hover",
@@ -203,8 +214,10 @@ export default {
     "fullscreenMenu.Preferences.FlipObjectsWhileResizing": "Flip objects while resizing",
     "fullscreenMenu.Preferences.InvertZoomDirection": "Invert zoom direction",
     "fullscreenMenu.Preferences.UseNumberKeysForOpacity": "Use number keys for opacity",
+    "fullscreenMenu.Preferences.ShakeCursorForHighFive": "Shake cursor for high five",
     "fullscreenMenu.Preferences.OpenLinksInDesktopApp": "Open links in desktop app",
     "fullscreenMenu.Preferences.NudgeAmount": "Nudge amount…",
+    "fullscreenMenu.Preferences.ShowTemplatesForNewFiles": "Show templates for new files",
 
     "fullscreenMenu.Libraries": "Libraries",
 
@@ -248,8 +261,19 @@ export default {
     "toolbarView.penFlyout.flyout.toolPen": "Pen",
     "toolbarView.penFlyout.flyout.toolPencil": "Pencil",
 
+    "toolbarView.CursorChat": "Cursor chat",
+    "toolbarView.Stamp": "Stamp",
+    "toolbarView.Emote": "Emote",
+
+    "toolbarView.Overflow.Emote": "Emote",
+    "toolbarView.Overflow.Stamp": "Stamp",
+    "toolbarView.Overflow.CursorChat": "Cursor chat",
+    "toolbarView.Overflow.HighFive": "High five",
+    "toolbarView.Overflow.Timer": "Timer",
+
 
     "contextMenu.Copy": "Copy",
+    "contextMenu.Paste": "Paste",
     "contextMenu.PasteHere": "Paste here",
 
     "contextMenu.CopyOrPasteAs": "Copy/Paste as",
@@ -262,6 +286,4 @@ export default {
     "contextMenu.LockOrUnlock": "Lock/Unlock",
 
     "contextMenu.ShowOrHideComments": "Show/Hide comments",
-
-    "contextMenu.CursorChat": "Cursor chat"
 }

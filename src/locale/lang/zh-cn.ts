@@ -8,11 +8,13 @@ export default {
     "fullscreenMenu.File.NewFigJamFile": "新建 FigJam 文件",
     "fullscreenMenu.File.NewFromSketchFile": "从 Sketch 文件新建…",
     "fullscreenMenu.File.PlaceImage": "导入图片…",
+    "fullscreenMenu.File.ImportFromCSV": "从 CSV 中导入…",
     "fullscreenMenu.File.SaveLocalCopy": "保存本地副本…",
     "fullscreenMenu.File.SaveToVersionHistory": "保存至版本历史…",
     "fullscreenMenu.File.ShowVersionHistory": "查看版本历史",
     "fullscreenMenu.File.Export": "导出…",
     "fullscreenMenu.File.ExportFramesToPDF": "导出画框为 PDF…",
+    "fullscreenMenu.File.ExportAs": "导出为…",
 
     "fullscreenMenu.Edit": "编辑",
     "fullscreenMenu.Edit.Undo": "撤销",
@@ -53,6 +55,7 @@ export default {
     "fullscreenMenu.View.PixelPreview": "像素预览",
     "fullscreenMenu.View.MaskOutlines": "蒙版轮廓",
     "fullscreenMenu.View.FrameOutlines": "画框轮廓",
+    "fullscreenMenu.View.ShowDotGrid": "显示点状网格",
     "fullscreenMenu.View.ResourceUse": "资源使用情况",
     "fullscreenMenu.View.ShowOrHideUI": "显示/隐藏界面",
     "fullscreenMenu.View.MultiplayerCursors": "多人鼠标指针",
@@ -78,10 +81,11 @@ export default {
 
     "fullscreenMenu.Object": "对象",
     "fullscreenMenu.Object.GroupSelection": "对所选项进行编组",
-    "fullscreenMenu.Object.CreateSection": "Create section",
+    "fullscreenMenu.Object.CreateSection": "创建部件",
     "fullscreenMenu.Object.FrameSelection": "选择画框",
     "fullscreenMenu.Object.UngroupSelection": "取消对所选项进行编组",
     "fullscreenMenu.Object.UseAsMask": "设为蒙版",
+    "fullscreenMenu.Object.RestoreDefaultThumbnail": "恢复默认封面",
     "fullscreenMenu.Object.SetAsThumbnail": "设为封面",
     "fullscreenMenu.Object.AddAutoLayout": "添加自动布局",
     "fullscreenMenu.Object.CreateComponent": "创建组件",
@@ -127,7 +131,7 @@ export default {
 
     "fullscreenMenu.Text": "文本",
     "fullscreenMenu.Text.Bold": "加粗",
-    "fullscreenMenu.Text.Italic": "Italic",
+    "fullscreenMenu.Text.Italic": "斜体",
     "fullscreenMenu.Text.Underline": "下划线",
     "fullscreenMenu.Text.Strikethrough": "删除线",
     "fullscreenMenu.Text.CreateLink": "创建链接",
@@ -182,8 +186,14 @@ export default {
     "fullscreenMenu.Arrange.DistributeBottom": "向下均分",
 
     "fullscreenMenu.Plugins": "插件",
+    "fullscreenMenu.Plugins.RunLastPlugin": "运行上一个插件",
     "fullscreenMenu.Plugins.ManagePlugins": "管理插件…",
     "fullscreenMenu.Plugins.BrowsePluginsInCommunity": "在社区中浏览插件",
+    "fullscreenMenu.Plugins.BrowsePlugins": "浏览插件",
+
+    "fullscreenMenu.Widgets": "小部件",
+    "fullscreenMenu.Widgets.BrowseWidgets": "浏览小部件",
+    "fullscreenMenu.Widgets.SelectAllWidgets": "选择所有小部件",
 
     "fullscreenMenu.Integrations": "集成",
     "fullscreenMenu.Integrations.Dribbble": "Dribbble",
@@ -191,6 +201,7 @@ export default {
     "fullscreenMenu.Preferences": "偏好设置",
     "fullscreenMenu.Preferences.SnapToGeometry": "对齐到形状",
     "fullscreenMenu.Preferences.SnapToObjects": "对齐到对象",
+    "fullscreenMenu.Preferences.SnapToDotGrid": "对齐到点状网格",
     "fullscreenMenu.Preferences.SnapToPixelGrid": "对齐到像素",
     "fullscreenMenu.Preferences.KeepToolSelectedAfterUse": "使用后保持工具选择",
     "fullscreenMenu.Preferences.HighlightLayersOnHover": "突出显示悬停图层",
@@ -203,8 +214,10 @@ export default {
     "fullscreenMenu.Preferences.FlipObjectsWhileResizing": "调整大小时翻转对象",
     "fullscreenMenu.Preferences.InvertZoomDirection": "反转缩放方向",
     "fullscreenMenu.Preferences.UseNumberKeysForOpacity": "使用数字控制透明度",
+    "fullscreenMenu.Preferences.ShakeCursorForHighFive": "摇动光标进行挥手",
     "fullscreenMenu.Preferences.OpenLinksInDesktopApp": "在桌面应用打开链接",
     "fullscreenMenu.Preferences.NudgeAmount": "微调量…",
+    "fullscreenMenu.Preferences.ShowTemplatesForNewFiles": "显示新文件的模版",
 
     "fullscreenMenu.Libraries": "组件库",
 
@@ -248,8 +261,19 @@ export default {
     "toolbarView.penFlyout.flyout.toolPen": "钢笔",
     "toolbarView.penFlyout.flyout.toolPencil": "铅笔",
 
+    "toolbarView.CursorChat": "聚焦聊天框",
+    "toolbarView.Stamp": "印章",
+    "toolbarView.Emote": "表情",
+
+    "toolbarView.Overflow.Emote": "表情",
+    "toolbarView.Overflow.Stamp": "印章",
+    "toolbarView.Overflow.CursorChat": "聚焦聊天框",
+    "toolbarView.Overflow.HighFive": "挥手",
+    "toolbarView.Overflow.Timer": "计时器",
+
 
     "contextMenu.Copy": "复制",
+    "contextMenu.Paste": "粘贴",
     "contextMenu.PasteHere": "粘贴到这里",
 
     "contextMenu.CopyOrPasteAs": "复制/粘贴为",
@@ -262,6 +286,4 @@ export default {
     "contextMenu.LockOrUnlock": "锁定/解锁",
 
     "contextMenu.ShowOrHideComments": "显示/隐藏评论",
-
-    "contextMenu.CursorChat": "聚焦聊天框"
 }
