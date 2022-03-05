@@ -41,13 +41,17 @@ export 	const languageConverter = (elements: Element[], lang: string) => {
         if (
             Object.prototype.hasOwnProperty.call(matchElement, elementName)
         ) {
-            const element = matchElement[elementName]
-            if (element) {
+            const target = matchElement[elementName]
+            if (target) {
                 const langCon = languageContentTranslate(
                     elementName,
                     lang
                 )
-                element.textContent = langCon
+                if(target.type == "Attr") {
+                    target.node.setAttribute(target.attrName, langCon)
+                } else {
+                    target.node.textContent = langCon
+                }
             }
         }
     }

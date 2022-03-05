@@ -279,6 +279,8 @@ export default {
     "contextMenu.CopyOrPasteAs": "Copy/Paste as",
     "contextMenu.CopyOrPasteAs.CopyLink": "Copy link",
 
+    "contextMenu.SelectLayer": "Select layer",
+
     "contextMenu.Ungroup": "Ungroup",
     "contextMenu.Flatten": "Flatten",
 
@@ -286,4 +288,7 @@ export default {
     "contextMenu.LockOrUnlock": "Lock/Unlock",
 
     "contextMenu.ShowOrHideComments": "Show/Hide comments",
+
+
+    "pagesPanel.Tab": "Layers",
 }

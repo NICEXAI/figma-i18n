@@ -275,13 +275,14 @@ const matchRuleDict:MatchRule = {
     "toolbarView.Overflow.Timer": "XPATH://a[@data-testid='overflow.timer']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
     
 
-
     "contextMenu.Copy": "div[data-testid='dropdown-option-Copy']>div[class^='multilevel_dropdown--name']",
     "contextMenu.Paste": "div[data-testid='dropdown-option-Paste']>div[class^='multilevel_dropdown--name']",
     "contextMenu.PasteHere": "div[data-testid='dropdown-option-Paste here']>div[class^='multilevel_dropdown--name']",
 
     "contextMenu.CopyOrPasteAs": "div[data-testid='dropdown-option-Copy/Paste as']>div[class^='multilevel_dropdown--name']",
     "contextMenu.CopyOrPasteAs.CopyLink": "div[data-testid='dropdown-option-Copy  link']>div[class^='multilevel_dropdown--name']",
+
+    "contextMenu.SelectLayer": "div[data-testid='dropdown-option-Select layer']>div[class^='multilevel_dropdown--name']",
 
     "contextMenu.Ungroup": "div[data-testid='dropdown-option-Ungroup']>div[class^='multilevel_dropdown--name']",
     "contextMenu.Flatten": "div[data-testid='dropdown-option-Flatten']>div[class^='multilevel_dropdown--name']",
@@ -290,10 +291,54 @@ const matchRuleDict:MatchRule = {
     "contextMenu.LockOrUnlock": "div[data-testid='dropdown-option-Lock/Unlock']>div[class^='multilevel_dropdown--name']",
 
     "contextMenu.ShowOrHideComments": "div[data-testid='dropdown-option-Show/Hide comments']>div[class^='multilevel_dropdown--name']",
+
+
+    "pagesPanel.Tab": "div[class*='pages_panel--tabsHeader']>div[class*='pages_panel--tab']->attr:data-label",
 }
 
+type SelectType = "CSS" | "XPATH"
+type ControllType = "Text" | "Attr"
+
 interface MatchElement {
-    [key: string]: Element
+    [key: string]: {
+        type: ControllType
+        attrName: string
+        node: Element
+    }
+}
+
+interface OperationRule {
+    selectType: SelectType
+    selectRule: string
+    controllType: ControllType
+    attrName: string
+}
+
+const parseOperationRuleFromMatchRule = function(matchRule: string): OperationRule {
+    let rule: OperationRule = {
+        selectType: "CSS",
+        selectRule: "",
+        controllType: "Text",
+        attrName: ""
+    }
+
+    if(matchRule.startsWith("XPATH:")) {
+        rule.selectType = "XPATH"
+        matchRule = matchRule.replace("XPATH:", "")
+    }
+
+    if(matchRule.includes("->attr:")) {
+        rule.controllType = "Attr"
+        let ruleArr = matchRule.split("->attr:")
+        if(ruleArr.length == 2) {
+            rule.selectRule = ruleArr[0]
+            rule.attrName = ruleArr[1]
+        }
+    } else {
+        rule.selectRule = matchRule
+    }
+
+    return rule
 }
 
 export const getTargetElement = function(originElements: Element[]): MatchElement {
@@ -311,18 +356,22 @@ export const getTargetElement = function(originElements: Element[]): MatchElemen
                 continue
             }
 
-            const rule = matchRuleDict[elementName]
+            let rule = parseOperationRuleFromMatchRule(matchRuleDict[elementName])
             let target:Element
+            
 
-            if(rule.startsWith("XPATH:")) {
-                target = <Element>(document.evaluate(rule.replace("XPATH:", ""), <Element>element).iterateNext())
-                console.log(target, 123)
+            if(rule.selectType == "XPATH") {
+                target = <Element>(document.evaluate(rule.selectRule, <Element>element).iterateNext())
             } else {
-                target = (<Element>element).querySelector(rule)
+                target = (<Element>element).querySelector(rule.selectRule)
             }
 
             if(target && (target?.nodeType == 1 || target?.nodeType == 3)) {
-                matchElement[elementName] = target
+                matchElement[elementName] = {
+                    type: rule.controllType,
+                    attrName: rule.attrName,
+                    node: target
+                }
             }
         }
     }

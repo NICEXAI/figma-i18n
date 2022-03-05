@@ -279,6 +279,8 @@ export default {
     "contextMenu.CopyOrPasteAs": "复制/粘贴为",
     "contextMenu.CopyOrPasteAs.CopyLink": "复制链接",
 
+    "contextMenu.SelectLayer": "选择图层",
+
     "contextMenu.Ungroup": "取消编组",
     "contextMenu.Flatten": "拼合",
 
@@ -286,4 +288,7 @@ export default {
     "contextMenu.LockOrUnlock": "锁定/解锁",
 
     "contextMenu.ShowOrHideComments": "显示/隐藏评论",
+
+
+    "pagesPanel.Tab": "图层",
 }
