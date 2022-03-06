@@ -287,6 +287,7 @@ const matchRuleDict:MatchRule = {
     "contextMenu.CopyOrPasteAs.CopyLink": "div[data-testid='dropdown-option-Copy  link']>div[class^='multilevel_dropdown--name']",
 
     "contextMenu.SelectLayer": "div[data-testid='dropdown-option-Select layer']>div[class^='multilevel_dropdown--name']",
+    "contextMenu.MoveToPage": "div[data-testid='dropdown-option-Move to page']>div[class^='multilevel_dropdown--name']",
 
     "contextMenu.Ungroup": "div[data-testid='dropdown-option-Ungroup']>div[class^='multilevel_dropdown--name']",
     "contextMenu.Flatten": "div[data-testid='dropdown-option-Flatten']>div[class^='multilevel_dropdown--name']",

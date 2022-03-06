@@ -282,6 +282,7 @@ export default {
     "contextMenu.CopyOrPasteAs.CopyLink": "Copy link",
 
     "contextMenu.SelectLayer": "Select layer",
+    "contextMenu.MoveToPage": "Move to page",
 
     "contextMenu.Ungroup": "Ungroup",
     "contextMenu.Flatten": "Flatten",

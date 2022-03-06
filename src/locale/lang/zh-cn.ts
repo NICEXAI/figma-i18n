@@ -282,6 +282,7 @@ export default {
     "contextMenu.CopyOrPasteAs.CopyLink": "复制链接",
 
     "contextMenu.SelectLayer": "选择图层",
+    "contextMenu.MoveToPage": "移到页面",
 
     "contextMenu.Ungroup": "取消编组",
     "contextMenu.Flatten": "拼合",
