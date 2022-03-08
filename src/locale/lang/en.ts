@@ -243,7 +243,9 @@ export default {
     "fullscreenMenu.ZoomTo200": "Zoom to 200%",
     "fullscreenMenu.Disabled": "Disabled",
 
-    
+
+    "toolbarView.fileName.folderName.Drafts": "Drafts",
+
     "toolbarView.moveFlyout.flyout.toolDefault": "Move",
     "toolbarView.moveFlyout.flyout.toolScale": "Scale",
 

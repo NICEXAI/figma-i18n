@@ -247,7 +247,7 @@ const matchRuleDict:MatchRule = {
     "fullscreenMenu.Disabled": "div[data-testid='dropdown-option-Disabled']>div[class^='multilevel_dropdown--name']",
 
 
-    // "toolbarView.fileName.folderName.Drafts": "XPATH://div[contains(@class, 'filename_view--folder')]//div[text()='Drafts']",
+    "toolbarView.fileName.folderName.Drafts": "XPATH://div[contains(@class, 'filename_view--folder')]//div[text()='Drafts']",
 
     "toolbarView.moveFlyout.flyout.toolDefault": "a[data-testid='toolbarView.moveFlyout.flyout.toolDefault']>div[class^='action_option--text']",
     "toolbarView.moveFlyout.flyout.toolScale": "a[data-testid='toolbarView.moveFlyout.flyout.toolScale']>div[class^='action_option--text']",
@@ -320,11 +320,11 @@ const matchRuleDict:MatchRule = {
 }
 
 type SelectType = "CSS" | "XPATH"
-type ControllType = "Text" | "Attr"
+type ControlType = "Text" | "Attr"
 
 interface MatchElement {
     [key: string]: {
-        type: ControllType
+        type: ControlType
         attrName: string
         node: Element
     }
@@ -333,7 +333,7 @@ interface MatchElement {
 interface OperationRule {
     selectType: SelectType
     selectRule: string
-    controllType: ControllType
+    controlType: ControlType
     attrName: string
 }
 
@@ -341,7 +341,7 @@ const parseOperationRuleFromMatchRule = function(matchRule: string): OperationRu
     let rule: OperationRule = {
         selectType: "CSS",
         selectRule: "",
-        controllType: "Text",
+        controlType: "Text",
         attrName: ""
     }
 
@@ -351,7 +351,7 @@ const parseOperationRuleFromMatchRule = function(matchRule: string): OperationRu
     }
 
     if(matchRule.includes("->attr:")) {
-        rule.controllType = "Attr"
+        rule.controlType = "Attr"
         let ruleArr = matchRule.split("->attr:")
         if(ruleArr.length == 2) {
             rule.selectRule = ruleArr[0]
@@ -389,9 +389,13 @@ export const getTargetElement = function(originElements: Element[]): MatchElemen
                 target = (<Element>element).querySelector(rule.selectRule)
             }
 
+            if(!target) {
+                target = (<Element>element).querySelector(`*[figma-i18n-id='${elementName}']`)
+            }
+
             if(target && (target?.nodeType == 1 || target?.nodeType == 3)) {
                 matchElement[elementName] = {
-                    type: rule.controllType,
+                    type: rule.controlType,
                     attrName: rule.attrName,
                     node: target
                 }

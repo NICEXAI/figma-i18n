@@ -244,6 +244,8 @@ export default {
     "fullscreenMenu.Disabled": "禁用",
 
 
+    "toolbarView.fileName.folderName.Drafts": "草稿",
+
     "toolbarView.moveFlyout.flyout.toolDefault": "移动",
     "toolbarView.moveFlyout.flyout.toolScale": "缩放",
 
