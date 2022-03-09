@@ -313,10 +313,24 @@ const matchRuleDict:MatchRule = {
     "pagesPanel.Sidebar.ShowAsGrid": "div[class*='component_sidebar--headerContainer'] span[aria-label='Show as grid']->attr:data-tooltip",
     "pagesPanel.Sidebar.TeamLibrary": "div[class*='component_sidebar--headerContainer'] span[aria-label='Team library']->attr:data-tooltip",
 
+    "pagesPanel.Sidebar.Components": "XPATH://div[contains(@class, 'component_sidebar--container')]//div[text()='Components']",
+    "pagesPanel.Sidebar.Components.FirstInfoText": "XPATH://div[contains(@class, 'component_sidebar--container')]//div[contains(@class, 'empty_states--emptyStateContent')][1]//div[contains(@class, 'empty_states--emptyStateText')]//text()[1]",
+    "pagesPanel.Sidebar.Components.FirstInfoLink": "XPATH://div[contains(@class, 'component_sidebar--container')]//div[contains(@class, 'empty_states--emptyStateContent')][1]//div[contains(@class, 'empty_states--emptyStateText')]//a",
+    "pagesPanel.Sidebar.Components.SecondInfoText": "XPATH://div[contains(@class, 'component_sidebar--container')]//div[contains(@class, 'empty_states--emptyStateContent')][2]//div[contains(@class, 'empty_states--emptyStateText')]//text()[1]",
+    "pagesPanel.Sidebar.Components.SecondInfoLink": "XPATH://div[contains(@class, 'component_sidebar--container')]//div[contains(@class, 'empty_states--emptyStateContent')][2]//div[contains(@class, 'empty_states--emptyStateText')]//a",
+
 
     "propertiesPanel.TabsHeader.Design": "XPATH://div[contains(@class, 'properties_panel--tabsHeader')]//div[text()='Design']->attr:data-label",
     "propertiesPanel.TabsHeader.Prototype": "XPATH://div[contains(@class, 'properties_panel--tabsHeader')]//div[text()='Prototype']->attr:data-label",
     "propertiesPanel.TabsHeader.Inspect": "XPATH://div[contains(@class, 'properties_panel--tabsHeader')]//div[text()='Inspect']->attr:data-label",
+
+
+    "navbar.Community": "XPATH://div[@data-testid='dropdown-option-Community']//div[text()='Community']",
+    "navbar.Search": "XPATH://div[contains(@class, 'navbar--navbarContainer')]//input[contains(@class, 'search--searchInput')]->attr:placeholder",
+    "navbar.Notifications": "XPATH://div[contains(@class, 'user_notifications_dropdown--header')]//div[text()='Notifications']",
+    "navbar.InternalProfile": "div[data-testid='dropdown-option-Internal profile']>div[class^='multilevel_dropdown--name']",
+    "navbar.Settings": "div[data-testid='dropdown-option-Settings']>div[class^='multilevel_dropdown--name']",
+    "navbar.AddAccount": "div[data-testid='dropdown-option-Add account']>div[class^='multilevel_dropdown--name']",
 }
 
 type SelectType = "CSS" | "XPATH"

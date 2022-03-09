@@ -310,8 +310,22 @@ export default {
     "pagesPanel.Sidebar.ShowAsGrid": "Show as grid",
     "pagesPanel.Sidebar.TeamLibrary": "Team library",
 
+    "pagesPanel.Sidebar.Components": "Components",
+    "pagesPanel.Sidebar.Components.FirstInfoText": "To create a component, select a layer and click the \"Create component\" button in the toolbar.",
+    "pagesPanel.Sidebar.Components.FirstInfoLink": "Learn more",
+    "pagesPanel.Sidebar.Components.SecondInfoText": "Use libraries for quick access to components from other files.",
+    "pagesPanel.Sidebar.Components.SecondInfoLink": "Explore libraries...",
+
 
     "propertiesPanel.TabsHeader.Design": "Design",
     "propertiesPanel.TabsHeader.Prototype": "Prototype",
     "propertiesPanel.TabsHeader.Inspect": "Inspect",
+
+
+    "navbar.Community": "Community",
+    "navbar.Search": "Search files, teams, or people",
+    "navbar.Notifications": "Notifications",
+    "navbar.InternalProfile": "Internal profile",
+    "navbar.Settings": "Settings",
+    "navbar.AddAccount": "Add account",
 }

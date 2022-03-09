@@ -52,7 +52,9 @@ export 	const languageConverter = (elements: Element[], lang: string) => {
                 } else {
                     target.node.textContent = langCon
                 }
-                target.node.setAttribute("figma-i18n-id", elementName)
+                if(target.node && target.node.setAttribute) {
+                    target.node.setAttribute("figma-i18n-id", elementName)
+                }
             }
         }
     }

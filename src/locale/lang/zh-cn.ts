@@ -310,8 +310,22 @@ export default {
     "pagesPanel.Sidebar.ShowAsGrid": "显示为网格",
     "pagesPanel.Sidebar.TeamLibrary": "团队组件库",
 
+    "pagesPanel.Sidebar.Components": "组件",
+    "pagesPanel.Sidebar.Components.FirstInfoText": "如果要创建组件,请选择一个图层,然后单击工具栏中的「创建组件」按钮。",
+    "pagesPanel.Sidebar.Components.FirstInfoLink": "了解更多",
+    "pagesPanel.Sidebar.Components.SecondInfoText": "使用组件库可以快速访问其他文件中的组件。",
+    "pagesPanel.Sidebar.Components.SecondInfoLink": "查看组件库…",
+
 
     "propertiesPanel.TabsHeader.Design": "设计",
     "propertiesPanel.TabsHeader.Prototype": "原型",
     "propertiesPanel.TabsHeader.Inspect": "检查",
+
+
+    "navbar.Community": "社区",
+    "navbar.Search": "搜索文件、团队或人员",
+    "navbar.Notifications": "通知",
+    "navbar.InternalProfile": "内部简介",
+    "navbar.Settings": "设置",
+    "navbar.AddAccount": "添加账户",
 }
