@@ -331,6 +331,22 @@ const matchRuleDict:MatchRule = {
     "navbar.InternalProfile": "div[data-testid='dropdown-option-Internal profile']>div[class^='multilevel_dropdown--name']",
     "navbar.Settings": "div[data-testid='dropdown-option-Settings']>div[class^='multilevel_dropdown--name']",
     "navbar.AddAccount": "div[data-testid='dropdown-option-Add account']>div[class^='multilevel_dropdown--name']",
+
+
+    "sidebar.Recents": "XPATH://div[contains(@class, 'sidebar--navContent')]//span[text()='Recents']",
+    "sidebar.Drafts": "XPATH://div[contains(@class, 'sidebar--navContent')]//span[text()='Drafts']",
+    "sidebar.ExploreCommunity": "XPATH://div[contains(@class, 'sidebar--navContent')]//a[contains(@class, 'community_hub_link')]//span[text()='Explore community']",
+    "sidebar.TeamProject": "XPATH://div[contains(@class, 'sidebar--navContent')]//div[contains(@class, 'nav_section--orderedFolders')]//span[text()='Team project']",
+    "sidebar.CreateNewTeam": "XPATH://div[contains(@class, 'sidebar--navContent')]//div[contains(@class, 'new_team_link--createNewTeamLink')]//div[text()='Create new team']",
+
+
+    "fileBrowserView.RecentlyViewed": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'desktop_tool_bar--pageViewToolBarContainer')]//span[text()='Recently viewed']",
+    "fileBrowserView.NewDesignFile": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-design-file-button']//text()[1]",
+    "fileBrowserView.NewDesignFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-design-file-button']//div",
+    "fileBrowserView.NewFigJamFile": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-whiteboard-file-button']//text()[1]",
+    "fileBrowserView.NewFigJamFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-whiteboard-file-button']//div",
+    "fileBrowserView.ImportFile": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--importFileTile')]//div[contains(@class, 'new_file_creation_topbar--tileText')]//text()[1]",
+    "fileBrowserView.ImportFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--importFileTile')]//div[contains(@class, 'new_file_creation_topbar--tileText')]//div",
 }
 
 type SelectType = "CSS" | "XPATH"

@@ -328,4 +328,20 @@ export default {
     "navbar.InternalProfile": "Internal profile",
     "navbar.Settings": "Settings",
     "navbar.AddAccount": "Add account",
+
+
+    "sidebar.Recents": "Recents",
+    "sidebar.Drafts": "Drafts",
+    "sidebar.ExploreCommunity": "Explore community",
+    "sidebar.TeamProject": "Team project",
+    "sidebar.CreateNewTeam": "Create new team",
+
+
+    "fileBrowserView.RecentlyViewed": "Recently viewed",
+    "fileBrowserView.NewDesignFile": "New design file",
+    "fileBrowserView.NewDesignFile.Desc": "Design and prototype",
+    "fileBrowserView.NewFigJamFile": "New FigJam file",
+    "fileBrowserView.NewFigJamFile.Desc": "Whiteboard and diagram",
+    "fileBrowserView.ImportFile": "Import file",
+    "fileBrowserView.ImportFile.Desc": "Figma, Sketch, and image files",
 }

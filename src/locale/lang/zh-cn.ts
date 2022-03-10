@@ -328,4 +328,20 @@ export default {
     "navbar.InternalProfile": "内部简介",
     "navbar.Settings": "设置",
     "navbar.AddAccount": "添加账户",
+
+
+    "sidebar.Recents": "最近",
+    "sidebar.Drafts": "草稿",
+    "sidebar.ExploreCommunity": "探索社区",
+    "sidebar.TeamProject": "团队项目",
+    "sidebar.CreateNewTeam": "创建新的团队",
+
+
+    "fileBrowserView.RecentlyViewed": "最近浏览过",
+    "fileBrowserView.NewDesignFile": "新建设计文件",
+    "fileBrowserView.NewDesignFile.Desc": "设计和原型",
+    "fileBrowserView.NewFigJamFile": "新建 FigJam 文件",
+    "fileBrowserView.NewFigJamFile.Desc": "白板和图表",
+    "fileBrowserView.ImportFile": "导入文件",
+    "fileBrowserView.ImportFile.Desc": "Figma、Sketch 和图片文件",
 }
