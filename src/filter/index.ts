@@ -341,12 +341,16 @@ const matchRuleDict:MatchRule = {
 
 
     "fileBrowserView.RecentlyViewed": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'desktop_tool_bar--pageViewToolBarContainer')]//span[text()='Recently viewed']",
+    "fileBrowserView.Drafts": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'desktop_tool_bar--pageViewToolBarContainer')]//span[text()='Drafts']",
+    "fileBrowserView.Deleted": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'desktop_tool_bar--pageViewToolBarContainer')]//span[text()='Deleted']",
     "fileBrowserView.NewDesignFile": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-design-file-button']//text()[1]",
     "fileBrowserView.NewDesignFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-design-file-button']//div",
     "fileBrowserView.NewFigJamFile": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-whiteboard-file-button']//text()[1]",
     "fileBrowserView.NewFigJamFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--newFileTilesContainer')]//div[@data-testid='new-whiteboard-file-button']//div",
     "fileBrowserView.ImportFile": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--importFileTile')]//div[contains(@class, 'new_file_creation_topbar--tileText')]//text()[1]",
     "fileBrowserView.ImportFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--importFileTile')]//div[contains(@class, 'new_file_creation_topbar--tileText')]//div",
+
+    "fileBrowserView.Filter": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'tile_sort_filter--dropdownCollectionContainer')]//div[text()='Filter:']",
 }
 
 type SelectType = "CSS" | "XPATH"

@@ -338,10 +338,14 @@ export default {
 
 
     "fileBrowserView.RecentlyViewed": "Recently viewed",
+    "fileBrowserView.Drafts": "Drafts",
+    "fileBrowserView.Deleted": "Deleted",
     "fileBrowserView.NewDesignFile": "New design file",
     "fileBrowserView.NewDesignFile.Desc": "Design and prototype",
     "fileBrowserView.NewFigJamFile": "New FigJam file",
     "fileBrowserView.NewFigJamFile.Desc": "Whiteboard and diagram",
     "fileBrowserView.ImportFile": "Import file",
     "fileBrowserView.ImportFile.Desc": "Figma, Sketch, and image files",
+
+    "fileBrowserView.Filter": "Filter:",
 }

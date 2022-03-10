@@ -338,10 +338,14 @@ export default {
 
 
     "fileBrowserView.RecentlyViewed": "最近浏览过",
+    "fileBrowserView.Drafts": "草稿",
+    "fileBrowserView.Deleted": "已删除",
     "fileBrowserView.NewDesignFile": "新建设计文件",
     "fileBrowserView.NewDesignFile.Desc": "设计和原型",
     "fileBrowserView.NewFigJamFile": "新建 FigJam 文件",
     "fileBrowserView.NewFigJamFile.Desc": "白板和图表",
     "fileBrowserView.ImportFile": "导入文件",
     "fileBrowserView.ImportFile.Desc": "Figma、Sketch 和图片文件",
+
+    "fileBrowserView.Filter": "筛选:",
 }
