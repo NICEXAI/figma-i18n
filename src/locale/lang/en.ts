@@ -348,4 +348,9 @@ export default {
     "fileBrowserView.ImportFile.Desc": "Figma, Sketch, and image files",
 
     "fileBrowserView.Filter": "Filter:",
+    "fileBrowserView.Filter.AllFiles": "All files",
+    "fileBrowserView.Filter.Select.AllFiles": "All files",
+    "fileBrowserView.Filter.Select.DesignFiles": "Design files",
+    "fileBrowserView.Filter.Select.FigJamFiles": "FigJam Files",
+    "fileBrowserView.Filter.Select.Prototypes": "Prototypes",
 }

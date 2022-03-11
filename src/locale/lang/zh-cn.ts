@@ -348,4 +348,9 @@ export default {
     "fileBrowserView.ImportFile.Desc": "Figma、Sketch 和图片文件",
 
     "fileBrowserView.Filter": "筛选:",
+    "fileBrowserView.Filter.AllFiles": "全部文件",
+    "fileBrowserView.Filter.Select.AllFiles": "全部文件",
+    "fileBrowserView.Filter.Select.DesignFiles": "设计文件",
+    "fileBrowserView.Filter.Select.FigJamFiles": "FigJam 文件",
+    "fileBrowserView.Filter.Select.Prototypes": "原型",
 }

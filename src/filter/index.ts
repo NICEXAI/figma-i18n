@@ -351,6 +351,11 @@ const matchRuleDict:MatchRule = {
     "fileBrowserView.ImportFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--importFileTile')]//div[contains(@class, 'new_file_creation_topbar--tileText')]//div",
 
     "fileBrowserView.Filter": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'tile_sort_filter--dropdownCollectionContainer')]//div[text()='Filter:']",
+    // "fileBrowserView.Filter.AllFiles": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'tile_sort_filter--dropdownCollectionContainer')]//span[text()='All files']",
+    "fileBrowserView.Filter.Select.AllFiles": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='All files']",
+    "fileBrowserView.Filter.Select.DesignFiles": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Design files']",
+    "fileBrowserView.Filter.Select.FigJamFiles": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='FigJam Files']",
+    "fileBrowserView.Filter.Select.Prototypes": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Prototypes']",
 }
 
 type SelectType = "CSS" | "XPATH"
