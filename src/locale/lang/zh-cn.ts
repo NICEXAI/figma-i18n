@@ -348,9 +348,20 @@ export default {
     "fileBrowserView.ImportFile.Desc": "Figma、Sketch 和图片文件",
 
     "fileBrowserView.Filter": "筛选:",
-    "fileBrowserView.Filter.AllFiles": "全部文件",
     "fileBrowserView.Filter.Select.AllFiles": "全部文件",
     "fileBrowserView.Filter.Select.DesignFiles": "设计文件",
     "fileBrowserView.Filter.Select.FigJamFiles": "FigJam 文件",
     "fileBrowserView.Filter.Select.Prototypes": "原型",
+
+    "fileBrowserView.Sort": "排序:",
+    "fileBrowserView.Sort.Select.SortBy": "排序方式",
+    "fileBrowserView.Sort.Select.Alphabetical": "字母顺序",
+    "fileBrowserView.Sort.Select.DateCreated": "创建时间",
+    "fileBrowserView.Sort.Select.LastViewed": "最近浏览",
+    "fileBrowserView.Sort.Select.Order": "排序",
+    "fileBrowserView.Sort.Select.OldestFirst": "最早",
+    "fileBrowserView.Sort.Select.NewestFirst": "最新",
+
+    "fileBrowserView.ShowAsGrid": "显示为网格",
+    "fileBrowserView.ShowAsList": "显示为列表",
 }

@@ -348,9 +348,20 @@ export default {
     "fileBrowserView.ImportFile.Desc": "Figma, Sketch, and image files",
 
     "fileBrowserView.Filter": "Filter:",
-    "fileBrowserView.Filter.AllFiles": "All files",
     "fileBrowserView.Filter.Select.AllFiles": "All files",
     "fileBrowserView.Filter.Select.DesignFiles": "Design files",
     "fileBrowserView.Filter.Select.FigJamFiles": "FigJam Files",
     "fileBrowserView.Filter.Select.Prototypes": "Prototypes",
+
+    "fileBrowserView.Sort": "Sort:",
+    "fileBrowserView.Sort.Select.SortBy": "Sort by",
+    "fileBrowserView.Sort.Select.Alphabetical": "Alphabetical",
+    "fileBrowserView.Sort.Select.DateCreated": "Date created",
+    "fileBrowserView.Sort.Select.LastViewed": "Last viewed",
+    "fileBrowserView.Sort.Select.Order": "Order",
+    "fileBrowserView.Sort.Select.OldestFirst": "Oldest first",
+    "fileBrowserView.Sort.Select.NewestFirst": "Newest first",
+
+    "fileBrowserView.ShowAsGrid": "Show as grid",
+    "fileBrowserView.ShowAsList": "Show as list",
 }

@@ -351,11 +351,22 @@ const matchRuleDict:MatchRule = {
     "fileBrowserView.ImportFile.Desc": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'new_file_creation_topbar--importFileTile')]//div[contains(@class, 'new_file_creation_topbar--tileText')]//div",
 
     "fileBrowserView.Filter": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'tile_sort_filter--dropdownCollectionContainer')]//div[text()='Filter:']",
-    // "fileBrowserView.Filter.AllFiles": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[contains(@class, 'tile_sort_filter--dropdownCollectionContainer')]//span[text()='All files']",
     "fileBrowserView.Filter.Select.AllFiles": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='All files']",
     "fileBrowserView.Filter.Select.DesignFiles": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Design files']",
     "fileBrowserView.Filter.Select.FigJamFiles": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='FigJam Files']",
     "fileBrowserView.Filter.Select.Prototypes": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Prototypes']",
+
+    "fileBrowserView.Sort": "XPATH://div[contains(@class, 'file_browser_view--fileBrowserPageViewContainer')]//div[text()='Sort:']",
+    "fileBrowserView.Sort.Select.SortBy": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Sort by']",
+    "fileBrowserView.Sort.Select.Alphabetical": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Alphabetical']",
+    "fileBrowserView.Sort.Select.DateCreated": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Date created']",
+    "fileBrowserView.Sort.Select.LastViewed": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Last viewed']",
+    "fileBrowserView.Sort.Select.Order": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Order']",
+    "fileBrowserView.Sort.Select.OldestFirst": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Oldest first']",
+    "fileBrowserView.Sort.Select.NewestFirst": "XPATH://div[contains(@class, 'scroll_container--innerScrollContainer')]//a//text()[string()='Newest first']",
+
+    "fileBrowserView.ShowAsGrid": "div[class*='file_browser_page_view--contentContainer'] span[data-tooltip='Show as grid']->attr:data-tooltip",
+    "fileBrowserView.ShowAsList": "div[class*='file_browser_page_view--contentContainer'] span[data-tooltip='Show as list']->attr:data-tooltip",
 }
 
 type SelectType = "CSS" | "XPATH"
