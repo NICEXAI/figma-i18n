@@ -243,6 +243,21 @@ export default {
     "fullscreenMenu.ZoomTo200": "缩放至 200%",
     "fullscreenMenu.Disabled": "禁用",
 
+    "fullscreenMenu.Tooltip.MainMenu": "主菜单",
+	"fullscreenMenu.Tooltip.MoveTools": "移动工具",
+	"fullscreenMenu.Tooltip.SetToolDefault": "移动 V",
+	"fullscreenMenu.Tooltip.SetToolScale": "缩放 K",
+    "fullscreenMenu.Tooltip.RegionTools": "区域工具",
+	"fullscreenMenu.Tooltip.SetToolFrame": "画框 F",
+	"fullscreenMenu.Tooltip.SetToolSlice": "切片 S",
+    "fullscreenMenu.Tooltip.ShapeTools": "形状工具",
+	"fullscreenMenu.Tooltip.SetToolRectangle": "矩形 R",
+	"fullscreenMenu.Tooltip.SetToolLine": "直线 L",
+	"fullscreenMenu.Tooltip.SetToolArrow": "箭头 Shift+L",
+	"fullscreenMenu.Tooltip.SetToolEllipse": "椭圆 O",
+	"fullscreenMenu.Tooltip.SetToolRegularPolygon": "多边形",
+	"fullscreenMenu.Tooltip.SetToolStar": "星形",
+
 
     "toolbarView.fileName.folderName.Drafts": "草稿",
 

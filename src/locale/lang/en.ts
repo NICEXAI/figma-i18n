@@ -243,6 +243,21 @@ export default {
     "fullscreenMenu.ZoomTo200": "Zoom to 200%",
     "fullscreenMenu.Disabled": "Disabled",
 
+    "fullscreenMenu.Tooltip.MainMenu": "Main menu",
+	"fullscreenMenu.Tooltip.MoveTools": "Move tools",
+	"fullscreenMenu.Tooltip.SetToolDefault": "Move V",
+	"fullscreenMenu.Tooltip.SetToolScale": "Scale K",
+    "fullscreenMenu.Tooltip.RegionTools": "Region tools",
+	"fullscreenMenu.Tooltip.SetToolFrame": "Frame F",
+	"fullscreenMenu.Tooltip.SetToolSlice": "Slice S",
+    "fullscreenMenu.Tooltip.ShapeTools": "Shape tools",
+	"fullscreenMenu.Tooltip.SetToolRectangle": "Rectangle R",
+	"fullscreenMenu.Tooltip.SetToolLine": "Line L",
+	"fullscreenMenu.Tooltip.SetToolArrow": "Arrow Shift+L",
+	"fullscreenMenu.Tooltip.SetToolEllipse": "Ellipse O",
+	"fullscreenMenu.Tooltip.SetToolRegularPolygon": "Polygon",
+	"fullscreenMenu.Tooltip.SetToolStar": "Star",
+
 
     "toolbarView.fileName.folderName.Drafts": "Drafts",
 

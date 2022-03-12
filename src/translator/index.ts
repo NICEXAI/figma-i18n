@@ -48,8 +48,18 @@ export 	const languageConverter = (elements: Element[], lang: string) => {
                     lang
                 )
                 if(target.type == "Attr") {
-                    target.node.setAttribute(target.attrName, langCon)
-                } else {
+                    for (let i = 0; i < target.attrList.length; i++) {
+                        const attrNode = target.attrList[i];
+                        if(attrNode.Value=="" && target.node.getAttribute(attrNode.Key) != langCon) {
+                            target.node.setAttribute(attrNode.Key, langCon)
+                        }
+                        if(attrNode.Value != "" && target.node.getAttribute(attrNode.Key) != attrNode.Value) {
+                            target.node.setAttribute(attrNode.Key, attrNode.Value)
+                        }
+                    }
+                    
+                }
+                if(target.type == "Text" && target.node.textContent != langCon) {
                     target.node.textContent = langCon
                 }
                 if(target.node && target.node.setAttribute) {

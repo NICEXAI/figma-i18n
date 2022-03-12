@@ -72,7 +72,8 @@
 			})
 		}
 
-		translator.languageConverter(originElements, selectLangID)
+		// translator.languageConverter(originElements, selectLangID)
+		translator.languageConverter([document.body], selectLangID)
 	})
 
 	onMount(() => {
