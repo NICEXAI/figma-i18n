@@ -47,9 +47,19 @@ export 	const languageConverter = (elements: Element[], lang: string) => {
                     elementName,
                     lang
                 )
+                let trackStatus = true
+                
                 if(target.type == "Attr") {
                     for (let i = 0; i < target.attrList.length; i++) {
                         const attrNode = target.attrList[i];
+                        if(attrNode.Key == "no-track") {
+                            trackStatus = false
+                            continue
+                        }
+                        if(attrNode.Key == "text-content") {
+                            target.node.textContent = langCon
+                            continue
+                        }
                         if(attrNode.Value=="" && target.node.getAttribute(attrNode.Key) != langCon) {
                             target.node.setAttribute(attrNode.Key, langCon)
                         }
@@ -62,7 +72,7 @@ export 	const languageConverter = (elements: Element[], lang: string) => {
                 if(target.type == "Text" && target.node.textContent != langCon) {
                     target.node.textContent = langCon
                 }
-                if(target.node && target.node.setAttribute) {
+                if(trackStatus && target.node && target.node.setAttribute) {
                     target.node.setAttribute("figma-i18n-id", elementName)
                 }
             }

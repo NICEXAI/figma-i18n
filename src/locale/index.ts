@@ -1,5 +1,6 @@
 import * as zhCn from "./lang/zh-cn"
 import * as en from "./lang/en"
+import * as ja from "./lang/ja"
 
 export interface Language {
     [lang: string]: {
@@ -18,5 +19,9 @@ export const languageDict = {
     zhCn: {
         name: "简体中文",
         dict: zhCn.default
+    },
+    ja: {
+        name: "日本語",
+        dict: ja.default
     }
 }
