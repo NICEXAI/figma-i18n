@@ -27,7 +27,7 @@
 ### 📚 Script Features
 
 * Simple to use：No need to install additional plug-ins and manual language switching is supported, eliminating the need to turn plug-ins off/on frequently
-* Multi-language support：Support English and Simplified Chinese switch, Traditional Chinese and other languages will be supported gradually
+* Multi-language support：Support English, Simplified Chinese and Japanese, Traditional Chinese and other languages will be supported gradually
 * Smart switch theme：The action menu supports automatic theme switching according to the page
 * Precise language conversion：Accurately identify all DOM nodes that require language conversion, and solve the problem of inaccurate translation caused by string matching
 * Excellent conversion efficiency：Fully reuse existing nodes, minimize the number of operations on each node, and greatly improve conversion efficiency
