@@ -2,15 +2,11 @@
 	import * as translator from "../translator"
 	import { langStore } from "../store"
 	import { onDestroy, onMount, createEventDispatcher } from "svelte"
+	import { MenuTheme } from "../types"
 
 	const dispath = createEventDispatcher()
 
-	enum Mode {
-		Dark = "Dark",
-		Light = "Light"
-	}
-
-	export let mode: Mode
+	export let mode: MenuTheme
 
 	let langInfoList = translator.langInfoList
 	let openStatus = false
@@ -44,7 +40,7 @@
 
 <div class="fi_lang_wrap">
 	<span
-		class={mode == "Light"
+		class={mode == MenuTheme.Light
 			? "fi_lang-menu fi_theme-light"
 			: "fi_lang-menu fi_theme-dark"}
 	>

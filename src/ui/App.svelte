@@ -2,40 +2,34 @@
 	import * as translator from "../translator"
 	import { langStore } from "../store"
 	import { onDestroy, onMount } from "svelte"
+	import { RunMode, MenuTheme } from "../types"
 	import Menu from "./Menu.svelte"
+
+	export let runMode: RunMode
 
 	let langInfoList = translator.langInfoList
 	let selectLangID = langStore.status || langInfoList[0]?.ID
 	let menuIns = null
-
-	enum Mode {
-		Dark = "Dark",
-		Light = "Light",
-	}
+	let mode = MenuTheme.Dark
 
 	const getHomeTargetNode = () => {
-		return document.querySelectorAll(
-			"div[class^='navbar--navbarContainer']>div "
-		)[1]
+		return document.querySelectorAll("div[class^='navbar--navbarContainer']>div ")[1]
 	}
 	const getEditorTargetNode = () => {
-		return document.querySelector(
-			"div[class*='toolbar_view--rightButtonGroup']"
-		)
+		return document.querySelector("div[class*='toolbar_view--rightButtonGroup']")
 	}
 	const getMenuTargetNode = () => {
 		return document.querySelector("div[class='fi_lang_wrap']")
 	}
 
 	const isDesignPage = () => {
-		return !!document.querySelector(
-			"div[class*='delightful_toolbar--delightfulToolbarMask']"
-		)
+		return !!document.querySelector("div[class*='delightful_toolbar--delightfulToolbarMask']")
 	}
 
 	const initMenuController = () => {
 		const menuNode = getMenuTargetNode()
-		if (menuNode) {
+		let curMode = isDesignPage() ? MenuTheme.Light : MenuTheme.Dark
+		if (menuNode && mode == curMode) {
 			return
 		}
 
@@ -43,16 +37,18 @@
 			menuIns.$destroy()
 		}
 
+		mode = curMode
+
 		menuIns = new Menu({
 			target: getHomeTargetNode() || getEditorTargetNode(),
 			props: {
-				mode: isDesignPage() ? Mode.Light : Mode.Dark,
+				mode,
 			},
 		})
 
 		menuIns.$on("langChange", event => {
 			selectLangID = event.detail
-			translator.languageConverter([document.body], selectLangID)
+			translator.languageConverter([document.body], selectLangID, runMode)
 		})
 	}
 
@@ -73,13 +69,13 @@
 		}
 
 		// translator.languageConverter(originElements, selectLangID)
-		translator.languageConverter([document.body], selectLangID)
+		translator.languageConverter([document.body], selectLangID, runMode)
 	})
 
 	onMount(() => {
 		console.log("Figma i18n loaded")
 
-		translator.languageConverter([document.body], selectLangID)
+		translator.languageConverter([document.body], selectLangID, runMode)
 
 		observer.observe(document.body, {
 			childList: true,

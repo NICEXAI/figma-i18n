@@ -1,3 +1,5 @@
+import { RunMode } from "../types"
+
 interface MatchRule {
 	[key: string]: string
 }
@@ -250,24 +252,23 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.Tooltip.MoveTools": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Move tools']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolDefault": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-default']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolScale": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-scale']->attr:data-tooltip,data-tooltip-type=text",
-    "fullscreenMenu.Tooltip.RegionTools": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Region tools']->attr:data-tooltip,data-tooltip-type=text",
+	"fullscreenMenu.Tooltip.RegionTools": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Region tools']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolFrame": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-frame']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolSlice": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-slice']->attr:data-tooltip,data-tooltip-type=text",
-    "fullscreenMenu.Tooltip.ShapeTools": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Shape tools']->attr:data-tooltip,data-tooltip-type=text",
+	"fullscreenMenu.Tooltip.ShapeTools": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Shape tools']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolRectangle": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-rectangle']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolLine": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-line']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolArrow": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-arrow']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolEllipse": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-ellipse']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolRegularPolygon": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-regular-polygon']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolStar": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-star']->attr:data-tooltip,data-tooltip-type=text",
-    "fullscreenMenu.Tooltip.DrawingTools": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Drawing tools']->attr:data-tooltip,data-tooltip-type=text",
+	"fullscreenMenu.Tooltip.DrawingTools": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Drawing tools']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolPen": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-pen']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolPencil": "div[class*='toolbar_view--toolbar'] div[data-tooltip='set-tool-pencil']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolText": "div[class*='toolbar_view--toolbar'] span[data-tooltip='set-tool-type']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolHand": "div[class*='toolbar_view--toolbar'] span[data-tooltip='set-tool-hand']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolComments": "div[class*='toolbar_view--toolbar'] span[data-tooltip='set-tool-comments']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.Present": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Present']->attr:data-tooltip",
-
 
 	"toolbarView.fileName.folderName.Drafts": "XPATH://div[contains(@class, 'filename_view--folder')]//div[text()='Drafts']",
 
@@ -300,60 +301,58 @@ const matchRuleDict: MatchRule = {
 	"toolbarView.Overflow.HighFive": "XPATH://a[@data-testid='overflow.highFive']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
 	"toolbarView.Overflow.Timer": "XPATH://a[@data-testid='overflow.timer']//div[contains(@class,'toolbar_view--overflowInner')]//text()[1]",
 
-    "toolbarView.Tooltip.Collaborate": "div[class*='toolbar_view--toolbar'] div[data-tooltip='whiteboard-overflow-menu']->attr:data-tooltip,data-tooltip-type=text",
-    "toolbarView.Tooltip.ZoomOut": "div[class*='toolbar_view--toolbar'] span[data-tooltip='zoom-out']->attr:data-tooltip,data-tooltip-type=text",
-    "toolbarView.Tooltip.ZoomIn": "div[class*='toolbar_view--toolbar'] span[data-tooltip='zoom-in']->attr:data-tooltip,data-tooltip-type=text",
-    "toolbarView.Tooltip.ZoomOrViewOptions": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Zoom/view options']->attr:data-tooltip",
+	"toolbarView.Tooltip.Collaborate": "div[class*='toolbar_view--toolbar'] div[data-tooltip='whiteboard-overflow-menu']->attr:data-tooltip,data-tooltip-type=text",
+	"toolbarView.Tooltip.ZoomOut": "div[class*='toolbar_view--toolbar'] span[data-tooltip='zoom-out']->attr:data-tooltip,data-tooltip-type=text",
+	"toolbarView.Tooltip.ZoomIn": "div[class*='toolbar_view--toolbar'] span[data-tooltip='zoom-in']->attr:data-tooltip,data-tooltip-type=text",
+	"toolbarView.Tooltip.ZoomOrViewOptions": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Zoom/view options']->attr:data-tooltip",
 
-
-    "delightfulToolbar.MoveTool": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-default-desc']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.HandTool": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-hand']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.Marker": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-marker']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.Highlighter": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-highlighter']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.Eraser": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-eraser']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.Thin": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Thin']->attr:data-tooltip",
-    "delightfulToolbar.Thick": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Thick']->attr:data-tooltip",
-    "delightfulToolbar.Charcoal": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Charcoal']->attr:data-tooltip",
-    "delightfulToolbar.Red": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Red']->attr:data-tooltip",
-    "delightfulToolbar.Yellow": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Yellow']->attr:data-tooltip",
-    "delightfulToolbar.Green": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Green']->attr:data-tooltip",
-    "delightfulToolbar.Blue": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Blue']->attr:data-tooltip",
-    "delightfulToolbar.Violet": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Violet']->attr:data-tooltip",
-    "delightfulToolbar.Brown": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Brown']->attr:data-tooltip",
-    "delightfulToolbar.White": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='White']->attr:data-tooltip",
-    "delightfulToolbar.Square": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-square']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.Ellipse": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-ellipse']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.RoundedRectangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-rounded-rectangle']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.Diamond": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-diamond']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.TriangleUp": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-triangle-up']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.TriangleDown": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-triangle-down']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.ParallelogramRight": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-parallelogram-right']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.ParallelogramLeft": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-parallelogram-left']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.Cylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-database']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.HorizontalCylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-queue']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.File": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-file']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.Folder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-folder']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.Options.Square": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Square']->attr:data-tooltip",
-    "delightfulToolbar.Options.Ellipse": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Ellipse']->attr:data-tooltip",
-    "delightfulToolbar.Options.RoundedRectangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Rounded rectangle']->attr:data-tooltip",
-    "delightfulToolbar.Options.Diamond": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Diamond']->attr:data-tooltip",
-    "delightfulToolbar.Options.Triangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Triangle']->attr:data-tooltip",
-    "delightfulToolbar.Options.DownwardPointingTriangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Downward-pointing triangle']->attr:data-tooltip",
-    "delightfulToolbar.Options.RightLeaningParallelogram": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Right-leaning parallelogram']->attr:data-tooltip",
-    "delightfulToolbar.Options.LeftLeaningParallelogram": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Left-leaning parallelogram']->attr:data-tooltip",
-    "delightfulToolbar.Options.Cylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Cylinder']->attr:data-tooltip",
-    "delightfulToolbar.Options.HorizontalCylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Horizontal cylinder']->attr:data-tooltip",
-    "delightfulToolbar.Options.File": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='File']->attr:data-tooltip",
-    "delightfulToolbar.Options.Folder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Folder']->attr:data-tooltip",
-    "delightfulToolbar.Sticky": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-sticky']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.Text": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-type']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.Connector": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-connector-elbowed']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.Line": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-connector-straight']->attr:data-tooltip,data-tooltip-type=text,no-track",
-    "delightfulToolbar.Options.Connector": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Connector']->attr:data-tooltip",
-    "delightfulToolbar.Options.StraightLine": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Straight line']->attr:data-tooltip",
-    "delightfulToolbar.Stamp": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-stamp']->attr:data-tooltip,data-tooltip-type=text",
-    "delightfulToolbar.More": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='browse-all-resources-dlt']->attr:data-tooltip,data-tooltip-type=text",
-
+	"delightfulToolbar.MoveTool": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-default-desc']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.HandTool": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-hand']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.Marker": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-marker']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.Highlighter": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-highlighter']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.Eraser": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-eraser']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.Thin": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Thin']->attr:data-tooltip",
+	"delightfulToolbar.Thick": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Thick']->attr:data-tooltip",
+	"delightfulToolbar.Charcoal": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Charcoal']->attr:data-tooltip",
+	"delightfulToolbar.Red": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Red']->attr:data-tooltip",
+	"delightfulToolbar.Yellow": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Yellow']->attr:data-tooltip",
+	"delightfulToolbar.Green": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Green']->attr:data-tooltip",
+	"delightfulToolbar.Blue": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Blue']->attr:data-tooltip",
+	"delightfulToolbar.Violet": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Violet']->attr:data-tooltip",
+	"delightfulToolbar.Brown": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Brown']->attr:data-tooltip",
+	"delightfulToolbar.White": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='White']->attr:data-tooltip",
+	"delightfulToolbar.Square": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-square']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.Ellipse": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-ellipse']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.RoundedRectangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-rounded-rectangle']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.Diamond": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-diamond']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.TriangleUp": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-triangle-up']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.TriangleDown": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-triangle-down']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.ParallelogramRight": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-parallelogram-right']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.ParallelogramLeft": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-parallelogram-left']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.Cylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-database']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.HorizontalCylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-queue']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.File": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-file']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.Folder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-shape-whiteboard-eng-folder']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.Options.Square": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Square']->attr:data-tooltip",
+	"delightfulToolbar.Options.Ellipse": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Ellipse']->attr:data-tooltip",
+	"delightfulToolbar.Options.RoundedRectangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Rounded rectangle']->attr:data-tooltip",
+	"delightfulToolbar.Options.Diamond": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Diamond']->attr:data-tooltip",
+	"delightfulToolbar.Options.Triangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Triangle']->attr:data-tooltip",
+	"delightfulToolbar.Options.DownwardPointingTriangle": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Downward-pointing triangle']->attr:data-tooltip",
+	"delightfulToolbar.Options.RightLeaningParallelogram": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Right-leaning parallelogram']->attr:data-tooltip",
+	"delightfulToolbar.Options.LeftLeaningParallelogram": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Left-leaning parallelogram']->attr:data-tooltip",
+	"delightfulToolbar.Options.Cylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Cylinder']->attr:data-tooltip",
+	"delightfulToolbar.Options.HorizontalCylinder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Horizontal cylinder']->attr:data-tooltip",
+	"delightfulToolbar.Options.File": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='File']->attr:data-tooltip",
+	"delightfulToolbar.Options.Folder": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Folder']->attr:data-tooltip",
+	"delightfulToolbar.Sticky": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-sticky']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.Text": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-type']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.Connector": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-connector-elbowed']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.Line": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-connector-straight']->attr:data-tooltip,data-tooltip-type=text,no-track",
+	"delightfulToolbar.Options.Connector": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Connector']->attr:data-tooltip",
+	"delightfulToolbar.Options.StraightLine": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='Straight line']->attr:data-tooltip",
+	"delightfulToolbar.Stamp": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-stamp']->attr:data-tooltip,data-tooltip-type=text",
+	"delightfulToolbar.More": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='browse-all-resources-dlt']->attr:data-tooltip,data-tooltip-type=text",
 
 	"contextMenu.Copy": "div[data-testid='dropdown-option-Copy']>div[class^='multilevel_dropdown--name']",
 	"contextMenu.Paste": "div[data-testid='dropdown-option-Paste']>div[class^='multilevel_dropdown--name']",
@@ -505,7 +504,7 @@ const parseOperationRuleFromMatchRule = function (matchRule: string): OperationR
 	return rule
 }
 
-export const getTargetElement = function (originElements: Element[]): MatchElement {
+export const getTargetElement = function (originElements: Element[], runMode: RunMode): MatchElement {
 	let matchElement: MatchElement = {}
 
 	for (const element of originElements) {
@@ -513,7 +512,9 @@ export const getTargetElement = function (originElements: Element[]): MatchEleme
 			continue
 		}
 
-		console.log(element.innerHTML)
+		if (runMode == RunMode.Dev) {
+			console.log(element.innerHTML)
+		}
 
 		for (const elementName in matchRuleDict) {
 			if (!Object.prototype.hasOwnProperty.call(matchRuleDict, elementName)) {
