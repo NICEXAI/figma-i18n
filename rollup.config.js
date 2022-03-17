@@ -23,7 +23,7 @@ const metaInfo = {
 	"updateURL": "https://github.com/NICEXAI/figma-i18n/blob/main/dist/figma-i18n.normal.js",
 	"downloadURL": "https://github.com/NICEXAI/figma-i18n/blob/main/dist/figma-i18n.normal.js",
   
-	"match": "*://www.figma.com/file/*",
+	"match": "*://www.figma.com/*",
 	"run-at": "document-end",
 	"icon": "https://static.figma.com/app/icon/1/favicon.png",
 	"license": "Apache; https://github.com/NICEXAI/figma-i18n/blob/main/LICENSE",
