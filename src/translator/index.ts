@@ -1,6 +1,5 @@
 import * as filter from "../filter"
 import { Language, languageDict } from "../locale"
-import type { RunMode } from "../types"
 
 export interface LangInfo {
 	ID: string
@@ -34,8 +33,8 @@ const languageContentTranslate = function (elementName: string, lang: string): s
 
 export const langInfoList = generateLangInfoList(languageDict)
 
-export const languageConverter = (elements: Element[], lang: string, runMode: RunMode) => {
-	const matchElement = filter.getTargetElement(elements, runMode)
+export const languageConverter = (elements: Element[], lang: string) => {
+	const matchElement = filter.getTargetElement(elements)
 
 	for (const elementName in matchElement) {
 		if (Object.prototype.hasOwnProperty.call(matchElement, elementName)) {

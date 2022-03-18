@@ -48,34 +48,34 @@
 
 		menuIns.$on("langChange", event => {
 			selectLangID = event.detail
-			translator.languageConverter([document.body], selectLangID, runMode)
+			translator.languageConverter([document.body], selectLangID)
 		})
 	}
 
 	let observer = new MutationObserver(function (mutations) {
 		initMenuController()
 
-		let originElements: Element[] = []
+		if (runMode == RunMode.Dev) {
+			for (const mutation of mutations) {
+				const nodes = mutation.addedNodes
+				if (!nodes || nodes.length == 0) {
+					continue
+				}
 
-		for (const mutation of mutations) {
-			const nodes = mutation.addedNodes
-			if (!nodes || nodes.length == 0) {
-				continue
+				nodes.forEach(node => {
+					let element = <Element>node
+					console.log(element.innerHTML)
+				})
 			}
-
-			nodes.forEach(node => {
-				originElements.push(<Element>node)
-			})
 		}
 
-		// translator.languageConverter(originElements, selectLangID)
-		translator.languageConverter([document.body], selectLangID, runMode)
+		translator.languageConverter([document.body], selectLangID)
 	})
 
 	onMount(() => {
 		console.log("Figma i18n loaded")
 
-		translator.languageConverter([document.body], selectLangID, runMode)
+		translator.languageConverter([document.body], selectLangID)
 
 		observer.observe(document.body, {
 			childList: true,

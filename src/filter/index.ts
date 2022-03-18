@@ -1,5 +1,3 @@
-import { RunMode } from "../types"
-
 interface MatchRule {
 	[key: string]: string
 }
@@ -504,16 +502,12 @@ const parseOperationRuleFromMatchRule = function (matchRule: string): OperationR
 	return rule
 }
 
-export const getTargetElement = function (originElements: Element[], runMode: RunMode): MatchElement {
+export const getTargetElement = function (originElements: Element[]): MatchElement {
 	let matchElement: MatchElement = {}
 
 	for (const element of originElements) {
 		if (!element.querySelector) {
 			continue
-		}
-
-		if (runMode == RunMode.Dev) {
-			console.log(element.innerHTML)
 		}
 
 		for (const elementName in matchRuleDict) {

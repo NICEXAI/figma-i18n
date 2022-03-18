@@ -5,7 +5,7 @@ import {RunMode} from "./types"
 const app = new App({
 	target: document.body,
 	props: {
-		runMode: RunMode.Prod
+		runMode: RunMode.Dev
 	}
 });
 
