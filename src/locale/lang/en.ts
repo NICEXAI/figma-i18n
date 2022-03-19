@@ -15,6 +15,7 @@ export default {
     "fullscreenMenu.File.Export": "Export…",
     "fullscreenMenu.File.ExportFramesToPDF": "Export frames to PDF…",
     "fullscreenMenu.File.ExportAs": "Export as…",
+    "fullscreenMenu.File.ExportSelection": "Export selection…",
 
     "fullscreenMenu.Edit": "Edit",
     "fullscreenMenu.Edit.Undo": "Undo",

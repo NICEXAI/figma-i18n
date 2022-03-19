@@ -19,6 +19,7 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.File.Export": "div[data-testid='dropdown-option-Export…']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.File.ExportFramesToPDF": "div[data-testid='dropdown-option-Export frames to PDF…']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.File.ExportAs": "div[data-testid='dropdown-option-Export as…']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.File.ExportSelection": "div[data-testid='dropdown-option-Export selection…']>div[class^='multilevel_dropdown--name']",
 
 	"fullscreenMenu.Edit": "div[data-testid='dropdown-option-Edit']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.Undo": "div[data-testid='dropdown-option-Undo']>div[class^='multilevel_dropdown--name']",

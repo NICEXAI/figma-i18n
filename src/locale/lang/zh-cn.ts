@@ -15,6 +15,7 @@ export default {
     "fullscreenMenu.File.Export": "导出…",
     "fullscreenMenu.File.ExportFramesToPDF": "导出画框为 PDF…",
     "fullscreenMenu.File.ExportAs": "导出为…",
+    "fullscreenMenu.File.ExportSelection": "导出选择…",
 
     "fullscreenMenu.Edit": "编辑",
     "fullscreenMenu.Edit.Undo": "撤销",

@@ -15,6 +15,7 @@ export default {
     "fullscreenMenu.File.Export": "書き出し",
     "fullscreenMenu.File.ExportFramesToPDF": "PDF で書き出し",
     "fullscreenMenu.File.ExportAs": "Export as…",
+    "fullscreenMenu.File.ExportSelection": "Export selection…",
 
     "fullscreenMenu.Edit": "編集",
     "fullscreenMenu.Edit.Undo": "取り消し",
