@@ -268,6 +268,10 @@ export default {
     "fullscreenMenu.Tooltip.CreateComponent": "创建组件 Ctrl+Alt+K",
 	"fullscreenMenu.Tooltip.UseAsMask": "设为蒙版 Ctrl+Alt+M",
 	"fullscreenMenu.Tooltip.BooleanGroups": "布尔组合",
+    "fullscreenMenu.Tooltip.UnionSelection": "连集所选项",
+	"fullscreenMenu.Tooltip.SubtractSelection": "减去所选项",
+	"fullscreenMenu.Tooltip.IntersectSelection": "交集所选项",
+	"fullscreenMenu.Tooltip.ExcludeSelection": "差集所选项",
 
 
     "toolbarView.fileName.folderName.Drafts": "草稿",

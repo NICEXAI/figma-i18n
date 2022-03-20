@@ -268,6 +268,10 @@ export default {
     "fullscreenMenu.Tooltip.CreateComponent": "Create component Ctrl+Alt+K",
 	"fullscreenMenu.Tooltip.UseAsMask": "Use as mask Ctrl+Alt+M",
 	"fullscreenMenu.Tooltip.BooleanGroups": "Boolean groups",
+    "fullscreenMenu.Tooltip.UnionSelection": "Union selection",
+	"fullscreenMenu.Tooltip.SubtractSelection": "Subtract selection",
+	"fullscreenMenu.Tooltip.IntersectSelection": "Intersect selection",
+	"fullscreenMenu.Tooltip.ExcludeSelection": "Exclude selection",
 
 
     "toolbarView.fileName.folderName.Drafts": "Drafts",
