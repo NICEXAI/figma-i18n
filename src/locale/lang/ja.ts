@@ -289,6 +289,12 @@ export default {
     "toolbarView.penFlyout.flyout.toolPen": "ペン",
     "toolbarView.penFlyout.flyout.toolPencil": "鉛筆",
 
+    "toolbarView.booleanFlyout.flyout.toolBooleanUnion": "Union selection",
+	"toolbarView.booleanFlyout.flyout.toolBooleanSubtract": "Subtract selection",
+	"toolbarView.booleanFlyout.flyout.toolBooleanIntersect": "Intersect selection",
+	"toolbarView.booleanFlyout.flyout.toolBooleatoolBooleanXornUnion": "Exclude selection",
+	"toolbarView.booleanFlyout.flyout.toolFlatten": "Flatten selection",
+
     "toolbarView.Share": "共有",
 
     "toolbarView.CursorChat": "Cursor chat",

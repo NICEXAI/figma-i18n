@@ -291,6 +291,12 @@ const matchRuleDict: MatchRule = {
 	"toolbarView.penFlyout.flyout.toolPen": "a[data-testid='toolbarView.penFlyout.flyout.toolPen']>div[class^='action_option--text']",
 	"toolbarView.penFlyout.flyout.toolPencil": "a[data-testid='toolbarView.penFlyout.flyout.toolPencil']>div[class^='action_option--text']",
 
+	"toolbarView.booleanFlyout.flyout.toolBooleanUnion": "a[data-testid='toolbarView.booleanFlyout.flyout.toolBooleanUnion']>div[class^='action_option--text']",
+	"toolbarView.booleanFlyout.flyout.toolBooleanSubtract": "a[data-testid='toolbarView.booleanFlyout.flyout.toolBooleanSubtract']>div[class^='action_option--text']",
+	"toolbarView.booleanFlyout.flyout.toolBooleanIntersect": "a[data-testid='toolbarView.booleanFlyout.flyout.toolBooleanIntersect']>div[class^='action_option--text']",
+	"toolbarView.booleanFlyout.flyout.toolBooleatoolBooleanXornUnion": "a[data-testid='toolbarView.booleanFlyout.flyout.toolBooleanXor']>div[class^='action_option--text']",
+	"toolbarView.booleanFlyout.flyout.toolFlatten": "a[data-testid='toolbarView.booleanFlyout.flyout.toolFlatten']>div[class^='action_option--text']",
+
 	"toolbarView.Share": "div[data-testid='multiplayer-toolbar-share-button']",
 
 	"toolbarView.CursorChat": "div[data-testid='dropdown-option-Cursor chat']>div[class^='multilevel_dropdown--name']",
@@ -307,6 +313,7 @@ const matchRuleDict: MatchRule = {
 	"toolbarView.Tooltip.ZoomOut": "div[class*='toolbar_view--toolbar'] span[data-tooltip='zoom-out']->attr:data-tooltip,data-tooltip-type=text",
 	"toolbarView.Tooltip.ZoomIn": "div[class*='toolbar_view--toolbar'] span[data-tooltip='zoom-in']->attr:data-tooltip,data-tooltip-type=text",
 	"toolbarView.Tooltip.ZoomOrViewOptions": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Zoom/view options']->attr:data-tooltip",
+
 
 	"delightfulToolbar.MoveTool": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-default-desc']->attr:data-tooltip,data-tooltip-type=text",
 	"delightfulToolbar.HandTool": "div[class*='delightful_toolbar--delightfulToolbarContainer'] div[data-tooltip='set-tool-hand']->attr:data-tooltip,data-tooltip-type=text",

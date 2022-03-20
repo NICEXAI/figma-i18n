@@ -289,6 +289,12 @@ export default {
     "toolbarView.penFlyout.flyout.toolPen": "钢笔",
     "toolbarView.penFlyout.flyout.toolPencil": "铅笔",
 
+    "toolbarView.booleanFlyout.flyout.toolBooleanUnion": "连集所选项",
+	"toolbarView.booleanFlyout.flyout.toolBooleanSubtract": "减去所选项",
+	"toolbarView.booleanFlyout.flyout.toolBooleanIntersect": "交集所选项",
+	"toolbarView.booleanFlyout.flyout.toolBooleatoolBooleanXornUnion": "差集所选项",
+	"toolbarView.booleanFlyout.flyout.toolFlatten": "展平所选项",
+
     "toolbarView.Share": "分享",
 
     "toolbarView.CursorChat": "聚焦聊天框",
