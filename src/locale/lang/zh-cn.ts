@@ -265,6 +265,9 @@ export default {
 	"fullscreenMenu.Tooltip.SetToolHand": "抓手工具 H",
 	"fullscreenMenu.Tooltip.SetToolComments": "添加评论 C",
 	"fullscreenMenu.Tooltip.Present": "演示",
+    "fullscreenMenu.Tooltip.CreateComponent": "创建组件 Ctrl+Alt+K",
+	"fullscreenMenu.Tooltip.UseAsMask": "设为蒙版 Ctrl+Alt+M",
+	"fullscreenMenu.Tooltip.BooleanGroups": "布尔组合",
 
 
     "toolbarView.fileName.folderName.Drafts": "草稿",

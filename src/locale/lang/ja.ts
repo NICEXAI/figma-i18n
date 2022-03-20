@@ -265,6 +265,9 @@ export default {
 	"fullscreenMenu.Tooltip.SetToolHand": "手のひらツール H",
 	"fullscreenMenu.Tooltip.SetToolComments": "コメントの追加 C",
 	"fullscreenMenu.Tooltip.Present": "プレゼンテーション",
+    "fullscreenMenu.Tooltip.CreateComponent": "Create component Ctrl+Alt+K",
+	"fullscreenMenu.Tooltip.UseAsMask": "Use as mask Ctrl+Alt+M",
+	"fullscreenMenu.Tooltip.BooleanGroups": "Boolean groups",
 
 
     "toolbarView.fileName.folderName.Drafts": "Drafts",

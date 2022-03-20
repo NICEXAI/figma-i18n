@@ -268,6 +268,9 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.Tooltip.SetToolHand": "div[class*='toolbar_view--toolbar'] span[data-tooltip='set-tool-hand']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.SetToolComments": "div[class*='toolbar_view--toolbar'] span[data-tooltip='set-tool-comments']->attr:data-tooltip,data-tooltip-type=text",
 	"fullscreenMenu.Tooltip.Present": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Present']->attr:data-tooltip",
+	"fullscreenMenu.Tooltip.CreateComponent": "div[class*='toolbar_view--toolbar'] span[data-tooltip='create-symbol']->attr:data-tooltip,data-tooltip-type=text",
+	"fullscreenMenu.Tooltip.UseAsMask": "div[class*='toolbar_view--toolbar'] span[data-tooltip='mask-selection']->attr:data-tooltip,data-tooltip-type=text",
+	"fullscreenMenu.Tooltip.BooleanGroups": "div[class*='toolbar_view--toolbar'] div[data-tooltip='Boolean groups']->attr:data-tooltip",
 
 	"toolbarView.fileName.folderName.Drafts": "XPATH://div[contains(@class, 'filename_view--folder')]//div[text()='Drafts']",
 

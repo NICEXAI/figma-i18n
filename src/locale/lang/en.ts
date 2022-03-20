@@ -265,6 +265,9 @@ export default {
 	"fullscreenMenu.Tooltip.SetToolHand": "Hand tool H",
 	"fullscreenMenu.Tooltip.SetToolComments": "Add comment C",
 	"fullscreenMenu.Tooltip.Present": "Present",
+    "fullscreenMenu.Tooltip.CreateComponent": "Create component Ctrl+Alt+K",
+	"fullscreenMenu.Tooltip.UseAsMask": "Use as mask Ctrl+Alt+M",
+	"fullscreenMenu.Tooltip.BooleanGroups": "Boolean groups",
 
 
     "toolbarView.fileName.folderName.Drafts": "Drafts",
