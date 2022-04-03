@@ -455,4 +455,14 @@ export default {
 
     "fileBrowserView.ShowAsGrid": "显示为网格",
     "fileBrowserView.ShowAsList": "显示为列表",
+
+    "fileBrowserView.ContextMenu.ShowInProject": "在项目中显示",
+    "fileBrowserView.ContextMenu.Open": "打开",
+	"fileBrowserView.ContextMenu.OpenInNewTab": "在新标签页中打开",
+	"fileBrowserView.ContextMenu.CopyLink": "复制链接",
+	"fileBrowserView.ContextMenu.Share": "分享",
+	"fileBrowserView.ContextMenu.Duplicate": "创建副本",
+	"fileBrowserView.ContextMenu.Rename": "重命名",
+	"fileBrowserView.ContextMenu.Delete": "删除",
+	"fileBrowserView.ContextMenu.RemoveFromRecent": "从最近中移除",
 }

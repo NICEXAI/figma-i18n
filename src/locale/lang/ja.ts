@@ -455,4 +455,14 @@ export default {
 
     "fileBrowserView.ShowAsGrid": "Show as grid",
     "fileBrowserView.ShowAsList": "Show as list",
+
+    "fileBrowserView.ContextMenu.ShowInProject": "Show in project",
+    "fileBrowserView.ContextMenu.Open": "Open",
+	"fileBrowserView.ContextMenu.OpenInNewTab": "Open in new tab",
+	"fileBrowserView.ContextMenu.CopyLink": "Copy link",
+	"fileBrowserView.ContextMenu.Share": "Share",
+	"fileBrowserView.ContextMenu.Duplicate": "Duplicate",
+	"fileBrowserView.ContextMenu.Rename": "Rename",
+	"fileBrowserView.ContextMenu.Delete": "Delete",
+	"fileBrowserView.ContextMenu.RemoveFromRecent": "Remove from recent",
 }

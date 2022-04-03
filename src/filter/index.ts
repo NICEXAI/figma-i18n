@@ -452,6 +452,16 @@ const matchRuleDict: MatchRule = {
 
 	"fileBrowserView.ShowAsGrid": "div[class*='file_browser_page_view--contentContainer'] span[data-tooltip='Show as grid']->attr:data-tooltip",
 	"fileBrowserView.ShowAsList": "div[class*='file_browser_page_view--contentContainer'] span[data-tooltip='Show as list']->attr:data-tooltip",
+
+	"fileBrowserView.ContextMenu.ShowInProject": "XPATH://a[text()='Show in project']",
+	"fileBrowserView.ContextMenu.Open": "XPATH://a[text()='Open']",
+	"fileBrowserView.ContextMenu.OpenInNewTab": "XPATH://a[text()='Open in new tab']",
+	"fileBrowserView.ContextMenu.CopyLink": "XPATH://a[text()='Copy link']",
+	"fileBrowserView.ContextMenu.Share": "XPATH://a[text()='Share']",
+	"fileBrowserView.ContextMenu.Duplicate": "XPATH://a[text()='Duplicate']",
+	"fileBrowserView.ContextMenu.Rename": "XPATH://a[text()='Rename']",
+	"fileBrowserView.ContextMenu.Delete": "XPATH://a[text()='Delete']",
+	"fileBrowserView.ContextMenu.RemoveFromRecent": "XPATH://a[text()='Remove  from recent']",
 }
 
 type SelectType = "CSS" | "XPATH"
