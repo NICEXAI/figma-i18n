@@ -15,7 +15,7 @@
 
 ### 💽 Script Installation
 
-1. Before installing the Figma I18n script, please confirm whether the script manager is installed in the browser. If not, click the link below to choose one to install it.
+1. Before installing the Figma I18n script, please confirm whether the script manager is installed in the browser. If not, click the link below to install it (due to `Violentmonkey` may have unknown compatibility issues, it is strongly recommended to install `Tampermonkey`).
    
    * [Tampermonkey](https://www.tampermonkey.net/) 👍
    * [Violentmonkey](https://violentmonkey.github.io/get-it/)
