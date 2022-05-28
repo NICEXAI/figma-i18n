@@ -460,6 +460,7 @@ export default {
     "fileBrowserView.ContextMenu.Open": "Open",
 	"fileBrowserView.ContextMenu.OpenInNewTab": "Open in new tab",
 	"fileBrowserView.ContextMenu.CopyLink": "Copy link",
+	"fileBrowserView.ContextMenu.AddToYourFavorites": "Add to your favorites",
 	"fileBrowserView.ContextMenu.Share": "Share",
 	"fileBrowserView.ContextMenu.Duplicate": "Duplicate",
 	"fileBrowserView.ContextMenu.Rename": "Rename",

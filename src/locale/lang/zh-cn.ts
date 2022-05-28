@@ -460,6 +460,7 @@ export default {
     "fileBrowserView.ContextMenu.Open": "打开",
 	"fileBrowserView.ContextMenu.OpenInNewTab": "在新标签页中打开",
 	"fileBrowserView.ContextMenu.CopyLink": "复制链接",
+    "fileBrowserView.ContextMenu.AddToYourFavorites": "添加到你的收藏",
 	"fileBrowserView.ContextMenu.Share": "分享",
 	"fileBrowserView.ContextMenu.Duplicate": "创建副本",
 	"fileBrowserView.ContextMenu.Rename": "重命名",

@@ -457,6 +457,7 @@ const matchRuleDict: MatchRule = {
 	"fileBrowserView.ContextMenu.Open": "XPATH://a[text()='Open']",
 	"fileBrowserView.ContextMenu.OpenInNewTab": "XPATH://a[text()='Open in new tab']",
 	"fileBrowserView.ContextMenu.CopyLink": "XPATH://a[text()='Copy link']",
+	"fileBrowserView.ContextMenu.AddToYourFavorites": "XPATH://a[text()='Add to your favorites']",
 	"fileBrowserView.ContextMenu.Share": "XPATH://a[text()='Share']",
 	"fileBrowserView.ContextMenu.Duplicate": "XPATH://a[text()='Duplicate']",
 	"fileBrowserView.ContextMenu.Rename": "XPATH://a[text()='Rename']",
