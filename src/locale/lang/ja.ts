@@ -38,6 +38,7 @@ export default {
     "fullscreenMenu.Edit.SelectAll": "すべてを選択",
     "fullscreenMenu.Edit.SelectNone": "選択解除",
     "fullscreenMenu.Edit.SelectInverse": "他を選択",
+    "fullscreenMenu.Edit.SelectAllMatchingLayers": "Select all matching layers",
     "fullscreenMenu.Edit.SelectAllWithSameProperties": "共通のプロパティをすべて選択",
     "fullscreenMenu.Edit.SelectAllWithSameFill": "共通の塗りをすべて選択",
     "fullscreenMenu.Edit.SelectAllWithSameStroke": "共通の線をすべて選択",
@@ -45,6 +46,7 @@ export default {
     "fullscreenMenu.Edit.SelectAllWithSameTextProperties": "共通のテキストプロパティをすべて選択",
     "fullscreenMenu.Edit.SelectAllWithSameFont": "共通のフォントを選択",
     "fullscreenMenu.Edit.SelectAllWithSameInstance": "共通のインスタンスを選択",
+    "fullscreenMenu.Edit.SelectAllWithSameVariant": "Select all with same variant",
 
     "fullscreenMenu.View": "表示",
     "fullscreenMenu.View.PixelGrid": "ピクセルグリッドを表示",
@@ -90,6 +92,7 @@ export default {
     "fullscreenMenu.Object.SetAsThumbnail": "ファイルのサムネイルに設定",
     "fullscreenMenu.Object.AddAutoLayout": "オートレイアウトを追加",
     "fullscreenMenu.Object.CreateComponent": "コンポーネントを作成",
+	"fullscreenMenu.Object.ResetAllChanges": "Reset all changes",
     "fullscreenMenu.Object.ResetAllOverrides": "オーバーライドをリセット",
     "fullscreenMenu.Object.DetachInstance": "インスタンスを解除",
 
@@ -165,6 +168,10 @@ export default {
     "fullscreenMenu.Text.Case.Uppercase": "すべて大文字",
     "fullscreenMenu.Text.Case.Lowercase": "すべて小文字",
 
+    "fullscreenMenu.Text.TextDirection": "Text direction",
+	"fullscreenMenu.Text.TextDirection.LeftToRight": "Left to right",
+	"fullscreenMenu.Text.TextDirection.RightToLeft": "Right to left",
+
 
     "fullscreenMenu.Arrange": "整列",
     "fullscreenMenu.Arrange.RoundToPixel": "ピクセルに合わせて配置",
@@ -217,6 +224,12 @@ export default {
     "fullscreenMenu.Preferences.UseNumberKeysForOpacity": "テンキーで不透明度を変更",
     "fullscreenMenu.Preferences.ShakeCursorForHighFive": "Shake cursor for high five",
     "fullscreenMenu.Preferences.OpenLinksInDesktopApp": "Open links in desktop app",
+
+    "fullscreenMenu.Preferences.Theme": "Theme",
+	"fullscreenMenu.Preferences.Theme.Light": "Light",
+	"fullscreenMenu.Preferences.Theme.Dark": "Dark",
+	"fullscreenMenu.Preferences.SystemTheme": "System theme",
+
     "fullscreenMenu.Preferences.NudgeAmount": "テンキー操作の値",
     "fullscreenMenu.Preferences.ShowTemplatesForNewFiles": "Show templates for new files",
 

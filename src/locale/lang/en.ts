@@ -38,6 +38,7 @@ export default {
     "fullscreenMenu.Edit.SelectAll": "Select all",
     "fullscreenMenu.Edit.SelectNone": "Select none",
     "fullscreenMenu.Edit.SelectInverse": "Select inverse",
+    "fullscreenMenu.Edit.SelectAllMatchingLayers": "Select all matching layers",
     "fullscreenMenu.Edit.SelectAllWithSameProperties": "Select all with same properties",
     "fullscreenMenu.Edit.SelectAllWithSameFill": "Select all with same fill",
     "fullscreenMenu.Edit.SelectAllWithSameStroke": "Select all with same stroke",
@@ -45,6 +46,7 @@ export default {
     "fullscreenMenu.Edit.SelectAllWithSameTextProperties": "Select all with same text properties",
     "fullscreenMenu.Edit.SelectAllWithSameFont": "Select all with same font",
     "fullscreenMenu.Edit.SelectAllWithSameInstance": "Select all with same instance",
+    "fullscreenMenu.Edit.SelectAllWithSameVariant": "Select all with same variant",
 
     "fullscreenMenu.View": "View",
     "fullscreenMenu.View.PixelGrid": "Pixel grid",
@@ -90,6 +92,7 @@ export default {
     "fullscreenMenu.Object.SetAsThumbnail": "Set as thumbnail",
     "fullscreenMenu.Object.AddAutoLayout": "Add auto layout",
     "fullscreenMenu.Object.CreateComponent": "Create component",
+	"fullscreenMenu.Object.ResetAllChanges": "Reset all changes",
     "fullscreenMenu.Object.ResetAllOverrides": "Reset all overrides",
     "fullscreenMenu.Object.DetachInstance": "Detach instance",
 
@@ -165,6 +168,10 @@ export default {
     "fullscreenMenu.Text.Case.Uppercase": "Uppercase",
     "fullscreenMenu.Text.Case.Lowercase": "Lowercase",
 
+    "fullscreenMenu.Text.TextDirection": "Text direction",
+	"fullscreenMenu.Text.TextDirection.LeftToRight": "Left to right",
+	"fullscreenMenu.Text.TextDirection.RightToLeft": "Right to left",
+
 
     "fullscreenMenu.Arrange": "Arrange",
     "fullscreenMenu.Arrange.RoundToPixel": "Round to pixel",
@@ -217,6 +224,12 @@ export default {
     "fullscreenMenu.Preferences.UseNumberKeysForOpacity": "Use number keys for opacity",
     "fullscreenMenu.Preferences.ShakeCursorForHighFive": "Shake cursor for high five",
     "fullscreenMenu.Preferences.OpenLinksInDesktopApp": "Open links in desktop app",
+
+	"fullscreenMenu.Preferences.Theme": "Theme",
+	"fullscreenMenu.Preferences.Theme.Light": "Light",
+	"fullscreenMenu.Preferences.Theme.Dark": "Dark",
+	"fullscreenMenu.Preferences.SystemTheme": "System theme",
+
     "fullscreenMenu.Preferences.NudgeAmount": "Nudge amount…",
     "fullscreenMenu.Preferences.ShowTemplatesForNewFiles": "Show templates for new files",
 

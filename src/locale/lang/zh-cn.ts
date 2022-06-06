@@ -38,6 +38,7 @@ export default {
     "fullscreenMenu.Edit.SelectAll": "全选",
     "fullscreenMenu.Edit.SelectNone": "取消选择",
     "fullscreenMenu.Edit.SelectInverse": "反选",
+    "fullscreenMenu.Edit.SelectAllMatchingLayers": "选择全部匹配的图层",
     "fullscreenMenu.Edit.SelectAllWithSameProperties": "选择全部相同属性",
     "fullscreenMenu.Edit.SelectAllWithSameFill": "选择全部相同填充颜色",
     "fullscreenMenu.Edit.SelectAllWithSameStroke": "选择全部相同描边",
@@ -45,6 +46,7 @@ export default {
     "fullscreenMenu.Edit.SelectAllWithSameTextProperties": "选择全部相同文本属性",
     "fullscreenMenu.Edit.SelectAllWithSameFont": "选择全部相同字体",
     "fullscreenMenu.Edit.SelectAllWithSameInstance": "选择全部相同组件实例",
+    "fullscreenMenu.Edit.SelectAllWithSameVariant": "选择全部相同变体",
 
     "fullscreenMenu.View": "查看",
     "fullscreenMenu.View.PixelGrid": "像素网格",
@@ -90,6 +92,7 @@ export default {
     "fullscreenMenu.Object.SetAsThumbnail": "设为封面",
     "fullscreenMenu.Object.AddAutoLayout": "添加自动布局",
     "fullscreenMenu.Object.CreateComponent": "创建组件",
+	"fullscreenMenu.Object.ResetAllChanges": "重置所有更改",
     "fullscreenMenu.Object.ResetAllOverrides": "重置所有覆盖",
     "fullscreenMenu.Object.DetachInstance": "分离实例",
 
@@ -165,6 +168,10 @@ export default {
     "fullscreenMenu.Text.Case.Uppercase": "大写",
     "fullscreenMenu.Text.Case.Lowercase": "小写",
 
+    "fullscreenMenu.Text.TextDirection": "文本方向",
+	"fullscreenMenu.Text.TextDirection.LeftToRight": "从左到右",
+	"fullscreenMenu.Text.TextDirection.RightToLeft": "从右到左",
+
 
     "fullscreenMenu.Arrange": "排列",
     "fullscreenMenu.Arrange.RoundToPixel": "对齐像素",
@@ -217,6 +224,12 @@ export default {
     "fullscreenMenu.Preferences.UseNumberKeysForOpacity": "使用数字控制透明度",
     "fullscreenMenu.Preferences.ShakeCursorForHighFive": "摇动光标进行挥手",
     "fullscreenMenu.Preferences.OpenLinksInDesktopApp": "在桌面应用打开链接",
+
+    "fullscreenMenu.Preferences.Theme": "主题",
+	"fullscreenMenu.Preferences.Theme.Light": "浅色",
+	"fullscreenMenu.Preferences.Theme.Dark": "深色",
+	"fullscreenMenu.Preferences.SystemTheme": "系统主题",
+
     "fullscreenMenu.Preferences.NudgeAmount": "微调量…",
     "fullscreenMenu.Preferences.ShowTemplatesForNewFiles": "显示新文件的模版",
 

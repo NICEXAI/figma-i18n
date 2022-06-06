@@ -42,6 +42,7 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.Edit.SelectAll": "div[data-testid='dropdown-option-Select all']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.SelectNone": "div[data-testid='dropdown-option-Select none']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.SelectInverse": "div[data-testid='dropdown-option-Select inverse']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Edit.SelectAllMatchingLayers": "div[data-testid='dropdown-option-Select all matching layers']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.SelectAllWithSameProperties": "div[data-testid='dropdown-option-Select all with same properties']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.SelectAllWithSameFill": "div[data-testid='dropdown-option-Select all with same fill']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.SelectAllWithSameStroke": "div[data-testid='dropdown-option-Select all with same stroke']>div[class^='multilevel_dropdown--name']",
@@ -49,6 +50,7 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.Edit.SelectAllWithSameTextProperties": "div[data-testid='dropdown-option-Select all with same text properties']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.SelectAllWithSameFont": "div[data-testid='dropdown-option-Select all with same font']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Edit.SelectAllWithSameInstance": "div[data-testid='dropdown-option-Select all with same instance']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Edit.SelectAllWithSameVariant": "div[data-testid='dropdown-option-Select all with same variant']>div[class^='multilevel_dropdown--name']",
 
 	"fullscreenMenu.View": "div[data-testid='dropdown-option-View']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.View.PixelGrid": "div[data-testid='dropdown-option-Pixel grid']>div[class^='multilevel_dropdown--name']",
@@ -94,6 +96,7 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.Object.SetAsThumbnail": "div[data-testid='dropdown-option-Set as thumbnail']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Object.AddAutoLayout": "div[data-testid='dropdown-option-Add auto layout']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Object.CreateComponent": "div[data-testid='dropdown-option-Create component']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Object.ResetAllChanges": "div[data-testid='dropdown-option-Reset all changes']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Object.ResetAllOverrides": "div[data-testid='dropdown-option-Reset all overrides']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Object.DetachInstance": "div[data-testid='dropdown-option-Detach instance']>div[class^='multilevel_dropdown--name']",
 
@@ -169,6 +172,10 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.Text.Case.Uppercase": "div[data-testid='dropdown-option-Uppercase']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Text.Case.Lowercase": "div[data-testid='dropdown-option-Lowercase']>div[class^='multilevel_dropdown--name']",
 
+	"fullscreenMenu.Text.TextDirection": "div[data-testid='dropdown-option-Text direction']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Text.TextDirection.LeftToRight": "div[data-testid='dropdown-option-Left to right']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Text.TextDirection.RightToLeft": "div[data-testid='dropdown-option-Right to left']>div[class^='multilevel_dropdown--name']",
+
 	"fullscreenMenu.Arrange": "div[data-testid='dropdown-option-Arrange']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Arrange.RoundToPixel": "div[data-testid='dropdown-option-Round to pixel']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Arrange.AlignLeft": "div[data-testid='dropdown-option-Align left']>div[class^='multilevel_dropdown--name']",
@@ -220,6 +227,12 @@ const matchRuleDict: MatchRule = {
 	"fullscreenMenu.Preferences.UseNumberKeysForOpacity": "div[data-testid='dropdown-option-Use number keys for opacity']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Preferences.ShakeCursorForHighFive": "div[data-testid='dropdown-option-Shake cursor for high five']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Preferences.OpenLinksInDesktopApp": "div[data-testid='dropdown-option-Open links in desktop app']>div[class^='multilevel_dropdown--name']",
+
+	"fullscreenMenu.Preferences.Theme": "div[data-testid='dropdown-option-Theme']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Preferences.Theme.Light": "div[data-testid='dropdown-option-Light']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Preferences.Theme.Dark": "div[data-testid='dropdown-option-Dark']>div[class^='multilevel_dropdown--name']",
+	"fullscreenMenu.Preferences.SystemTheme": "div[data-testid='dropdown-option-System theme']>div[class^='multilevel_dropdown--name']",
+
 	"fullscreenMenu.Preferences.NudgeAmount": "div[data-testid='dropdown-option-Nudge amount…']>div[class^='multilevel_dropdown--name']",
 	"fullscreenMenu.Preferences.ShowTemplatesForNewFiles": "div[data-testid='dropdown-option-Show templates for new files']>div[class^='multilevel_dropdown--name']",
 
