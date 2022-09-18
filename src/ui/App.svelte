@@ -38,18 +38,23 @@
 		}
 
 		mode = curMode
+		
+		const homeTarget = getHomeTargetNode()
+		const editorTarget = getEditorTargetNode()
 
-		menuIns = new Menu({
-			target: getHomeTargetNode() || getEditorTargetNode(),
-			props: {
-				mode,
-			},
-		})
+		if (homeTarget || editorTarget) {
+			menuIns = new Menu({
+				target: homeTarget || editorTarget,
+				props: {
+					mode,
+				},
+			})
 
-		menuIns.$on("langChange", event => {
-			selectLangID = event.detail
-			translator.languageConverter([document.body], selectLangID)
-		})
+			menuIns.$on("langChange", event => {
+				selectLangID = event.detail
+				translator.languageConverter([document.body], selectLangID)
+			})
+		}
 	}
 
 	let observer = new MutationObserver(function (mutations) {

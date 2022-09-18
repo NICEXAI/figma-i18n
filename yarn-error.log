@@ -1,0 +1,63 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe C:\Users\15005\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;D:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;D:\Program Files\nodejs\;D:\Program Files\TortoiseGit\bin;C:\Program Files\Go\bin;D:\flutter\bin;D:\Program Files\mingw64\bin;D:\Program Files\PuTTY\;C:\Program Files (x86)\ZeroTier\One\;D:\Program Files (x86)\Tencent\微信web开发者工具\dll;C:\Users\15005\.cargo\bin;D:\Program Files\Ruby30-x64\bin;C:\Users\15005\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2021.3\bin;;D:\Program Files\Microsoft VS Code\bin;C:\Users\15005\AppData\Local\GitHubDesktop\bin;C:\Users\15005\AppData\Roaming\npm;C:\Users\15005\go\bin;;D:\Program Files\JetBrains\PyCharm 2022.1.2\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\15005\AppData\Local\Yarn\Cache\v6\npm-ansi-styles-4.3.0-edd803628ae71c04c85ae7a0906edad34b648937-integrity\node_modules\ansi-styles\index.js' -> 'D:\WorkCode\github_desktop\figma-i18n\node_modules\rollup-plugin-postcss\node_modules\ansi-styles\index.js'
+
+npm manifest: 
+  {
+    "name": "figma-i18n",
+    "version": "1.0.7",
+    "description": "Powerful, intelligent and easy to use Figma internationalisation scripts.",
+    "author": "afeyer",
+    "private": true,
+    "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c -w",
+      "start": "sirv public --no-clear",
+      "check": "svelte-check --tsconfig ./tsconfig.json"
+    },
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "^17.0.0",
+      "@rollup/plugin-node-resolve": "^11.0.0",
+      "@rollup/plugin-typescript": "^8.0.0",
+      "@tsconfig/svelte": "^2.0.0",
+      "attractions": "^3.7.0",
+      "postcss": "^8.4.7",
+      "rollup": "^2.3.4",
+      "rollup-plugin-banner2": "^1.2.2",
+      "rollup-plugin-css-only": "^3.1.0",
+      "rollup-plugin-livereload": "^2.0.0",
+      "rollup-plugin-postcss": "^4.0.2",
+      "rollup-plugin-svelte": "^7.0.0",
+      "rollup-plugin-terser": "^7.0.0",
+      "sass": "^1.49.9",
+      "smelte": "^1.1.8",
+      "svelte": "^3.0.0",
+      "svelte-check": "^2.0.0",
+      "svelte-preprocess": "^4.10.4",
+      "tslib": "^2.0.0",
+      "typescript": "^4.0.0"
+    },
+    "dependencies": {
+      "sirv-cli": "^2.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
